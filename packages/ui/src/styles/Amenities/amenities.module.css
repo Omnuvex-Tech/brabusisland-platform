@@ -1,0 +1,150 @@
+.section {
+    width: 100%;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    background: #000000;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    width: 100%;
+    height: 360px;
+}
+
+.rowReversed {
+    flex-direction: row-reverse;
+}
+
+.imageBlock {
+    flex: 0 0 740px;
+    width: 740px;
+    height: 373px;
+    position: relative;
+}
+
+.image {
+    object-fit: cover;
+}
+
+.textBlockRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 0 27px;
+    text-align: left;
+}
+
+.textBlockLeft {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 16px;
+    padding: 0 60px;
+    text-align: right;
+}
+
+.label {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #767676;
+}
+
+.title {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.description {
+    margin: 0;
+    max-width: 67%;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 150%;
+    letter-spacing: 0;
+    padding-top: 10px;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .row {
+        gap: 32px;
+    }
+
+    .imageBlock {
+        flex-basis: 50%;
+        width: 50%;
+    }
+
+    .title {
+        font-size: 36px;
+    }
+
+    .label,
+    .description {
+        font-size: 18px;
+    }
+
+    .textBlockRight,
+    .textBlockLeft {
+        padding: 0 32px;
+    }
+}
+
+@media (max-width: 768px) {
+    .section {
+        padding-top: 48px;
+        padding-bottom: 48px;
+        gap: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .row,
+    .rowReversed {
+        flex-direction: column;
+        height: auto;
+        gap: 24px;
+    }
+
+    .imageBlock {
+        width: 100%;
+        flex-basis: auto;
+        height: 220px;
+    }
+
+    .textBlockRight,
+    .textBlockLeft {
+        padding: 0;
+        align-items: center;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 28px;
+    }
+
+    .label {
+        font-size: 15px;
+    }
+
+    .description {
+        font-size: 16px;
+    }
+}

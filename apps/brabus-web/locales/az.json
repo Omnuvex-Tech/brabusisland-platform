@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "navLinks": {
+      "about": "Haqqımızda",
+      "brokers": "Brokerlər",
+      "units": "Mənzillər",
+      "contacts": "Əlaqə"
+    },
+    "catalog": "Kataloq"
+  },
+  "hero": {
+    "title": "Brabus Island Baku",
+    "subtitle": "Treva / Sabah Investment Group (SIG) və BRABUS brend tərəfdaşlığının eksklüziv yaşayış konsepsiyası.",
+    "button": "Qiymət siyahısını əldə et"
+  },
+  "about": {
+    "title": "Brutal və sərt mühəndisliyin memarlıqdakı əksi",
+    "description": "BRABUS ISLAND Baku — Almaniyanın cəsarətli superkar və mühəndislik brendi olan BRABUS-un \"One-Second-Wow\" fəlsəfəsini Xəzər sahilinə daşıyır. Layihə RS Capital (Sabah Investment Group və Reportage Group əməkdaşlığı) tərəfindən RS Capital tərəfdaşlığı çərçivəsində reallaşdırılır. Bu, şablon yaşayış qaydalarını qəbul etməyən, kəskin xətləri, monoxrom estetikası və BRABUS DNT-si ilə formalaşan unikal dənizkənarı rezidensiya vizyonudur."
+  },
+  "exterior": {
+    "titleBold": "EKSTERYER.",
+    "titleRegular": "Xəzərin sahilində mühəndislik adası",
+    "description": "Bakı, Sea Breeze sahili. Kəskin dalğavari strukturlar, tünd monoxrom materiallar və sərt şaquli xətlər binaya dominant xarakter qazandırır.",
+    "caption": "* Bu bölmədə nümayiş olunan vizuallar rəqəmsal memarlıq modelləridir. Cari tikinti və icra statusu tərtibatçı tərəfindən mütəmadi yenilənir."
+  },
+  "cta": {
+  "buttonText": "Konsultasiya üçün müraciət et"
+},
+ "interior": {
+    "titleBold": "İNTERYER.",
+    "titleRegular": "SİZİN FƏRDİ SƏNƏT ƏSƏRİNİZ",
+    "description": "Superkarların arxitekturasından ilhamlanan interyerlər. Karbon elementləri, kəskin kontrastlar və material mühəndisliyi ilə hər rezidensiya sahibinin şəxsi sənət əsərinə (BRABUS Masterpiece) çevrilir. Komfort deyil, xarakter və erqonomika ön plandadır."
+  },
+  "amenities": {
+    "items": [
+      {
+        "label": "Rezidensiyalar və hovuz",
+        "title": "Tvin villalar",
+        "description": "Forma və funksiyanın brutal vəhdəti. Maksimal sahə planlaması, şüşə konsturksiyalar və dənizə birbaşa çıxış. Hər villanın özünə məxsus şəxsi bağçası və fərdi hovuzu mövcuddur."
+      },
+      {
+        "label": "Rezidensiyalar və hovuz",
+        "title": "Bərpa zonası",
+        "description": "Rezidentlər üçün xüsusi izolyasiya olunmuş zona. Dəniz mənzərəli hovuz kompleksi tam rahatlıq üçün nəzərdə tutulub."
+      },
+      {
+        "label": "Məhdud girişli zonalar",
+        "title": "Fitnes və spa sahəsi",
+        "description": "Tam təchizatlı fitnes zonası və konfidensiallıq üçün kişilər/qadınlar üçün ayrılmış saunalar, müasir hamam və masaj otaqları."
+      },
+      {
+        "label": "Məhdud girişli zonalar",
+        "title": "Rezidentlər üçün istirahət sahəsi",
+        "description": "İşgüzar kommunikasiya üçün qapalı sahələr. Minimalist arxitektura və fərdi işıqlandırma ilə formalaşan xüsusi atmosfer."
+      }
+    ]},
+     "consultation": {
+  "buttonText": "Konsultasiya üçün müraciət et"
+}
+}

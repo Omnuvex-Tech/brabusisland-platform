@@ -1,0 +1,161 @@
+@import "tailwindcss";
+@import "@repo/ui/styles";
+@source "../../../packages/ui/src/**/*.{ts,tsx}";
+
+/* DIN Pro — bunu `globals.css`-in başına əlavə et.
+   Fayllar `public/fonts/` altında olmalıdır (yəni `/fonts/dinpro.otf` kimi
+   brauzerdən əlçatan olsun). Qovluğun yolu fərqlidirsə, url()-ləri uyğunlaşdır. */
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_light.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_lightitalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_italic.otf') format('opentype');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_mediumitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_bold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_bolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_black.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro';
+  src: url('/fonts/dinpro_blackitalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Condensed variant — ayrı font-family adı, lazım olsa istifadə et */
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedregular.otf') format('opentype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedlight.otf') format('opentype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedlightitalic.otf') format('opentype');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedmedium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedmediumitalic.otf') format('opentype');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedbold.otf') format('opentype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedbolditalic.otf') format('opentype');
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedblack.otf') format('opentype');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DIN Pro Condensed';
+  src: url('/fonts/dinpro_condensedblackitalic.otf') format('opentype');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}

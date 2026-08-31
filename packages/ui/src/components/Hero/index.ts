@@ -1,0 +1,1 @@
+export { HeroUI as Hero } from './HeroUI';

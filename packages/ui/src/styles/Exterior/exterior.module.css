@@ -1,0 +1,314 @@
+/* .section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0 auto;
+    padding: clamp(32px, 7vw, 100px);
+    background: #000000;
+    box-sizing: border-box;
+    gap: clamp(24px, 3vw, 40px);
+    overflow-x: hidden;
+}
+
+.header {
+    display: flex;
+    flex-direction: column;
+    gap: 45px;
+    max-width: 900px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-size: clamp(20px, 2.4vw, 34px);
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.titleBold {
+    font-weight: 700;
+}
+
+.titleRegular {
+    font-weight: 400;
+}
+
+.description {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 300;
+    line-height: 150%;
+    letter-spacing: -0.54px;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 23px;
+    max-width: 93%;
+}
+
+
+.sliderOuter {
+    position: relative;
+    width: auto;
+    margin-right: calc(-1 * clamp(32px, 7vw, 100px));
+}
+
+.sliderWrapper {
+    display: flex;
+    width: 100%;
+    gap: 16px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+.sliderWrapper::-webkit-scrollbar {
+    display: none;
+}
+
+.slide {
+    flex: 0 0 calc(100% - clamp(60px, 16vw, 206px));
+    scroll-snap-align: start;
+    scroll-snap-stop: always;
+    box-sizing: border-box;
+}
+
+.slideFrame {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 1140 / 660;
+    overflow: hidden;
+}
+
+.slideImage {
+    object-fit: cover;
+}
+
+.shadowOverlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.55);
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+}
+
+.shadowOverlayHidden {
+    opacity: 0;
+}
+
+.arrowsBar {
+    position: absolute;
+    top: 50%;
+    left: calc(-1 * clamp(32px, 7vw, 100px));
+    right: 0;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+}
+
+.arrow {
+    position: relative;
+    width: clamp(36px, 4vw, 57.83px);
+    height: clamp(60px, 8vw, 96px);
+    border: none;
+    background: transparent;
+    cursor: pointer;
+    pointer-events: auto;
+}
+
+.arrowIcon {
+    object-fit: contain;
+}
+
+.caption {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+    letter-spacing: 0;
+    text-align: justify;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+    .sliderOuter {
+        margin-right: calc(-1 * clamp(20px, 5vw, 32px));
+    }
+
+    .arrowsBar {
+        left: calc(-1 * clamp(20px, 5vw, 32px));
+    }
+}
+
+@media (max-width: 640px) {
+
+    .description,
+    .caption {
+        text-align: left;
+    }
+} */
+
+
+
+.section {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0 auto;
+  padding: clamp(32px, 7vw, 100px);
+  background: #000000;
+  box-sizing: border-box;
+  gap: clamp(24px, 3vw, 40px);
+  overflow-x: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  max-width: 900px;
+}
+
+.title {
+  margin: 0;
+  font-family: 'DIN Pro', sans-serif;
+  font-size: clamp(20px, 2.4vw, 34px);
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.titleBold {
+  font-weight: 700;
+}
+
+.titleRegular {
+  font-weight: 400;
+}
+
+.description {
+  margin: 0;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 300;
+  line-height: 150%;
+  letter-spacing: -0.54px;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 23px;
+  max-width: 93%;
+}
+
+/* ---- Slider: sol kənar title ilə eyni hizada sabitdir,
+   sağ kənar yalnız section-un öz padding-i qədər "kənara" çıxır. ---- */
+
+.sliderOuter {
+  position: relative;
+  width: auto;
+  margin-right: calc(-1 * clamp(32px, 7vw, 100px));
+}
+
+.sliderWrapper {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.track {
+  display: flex;
+  gap: 16px;
+  will-change: transform;
+}
+
+.slide {
+  flex: 0 0 calc(100% - clamp(60px, 16vw, 206px));
+  box-sizing: border-box;
+}
+
+.slideFrame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 1140 / 660;
+  overflow: hidden;
+}
+
+.slideImage {
+  object-fit: cover;
+}
+
+.shadowOverlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  opacity: 1;
+  transition: opacity 500ms ease;
+  pointer-events: none;
+}
+
+.shadowOverlayHidden {
+  opacity: 0;
+}
+
+/* ---- Oxlar: sol ox section-un öz sol padding-inin (boşluğun) içinə,
+   sağ ox isə şəkil bitən yerdən (peek-in üzərinə) yerləşir. ---- */
+
+.arrowsBar {
+  position: absolute;
+  top: 50%;
+  left: calc(-1 * clamp(32px, 7vw, 100px));
+  right: 0;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  pointer-events: none;
+}
+
+.arrow {
+  position: relative;
+  width: clamp(36px, 4vw, 57.83px);
+  height: clamp(60px, 8vw, 96px);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.arrowIcon {
+  object-fit: contain;
+}
+
+.caption {
+  margin: 0;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0;
+  text-align: justify;
+  color: rgba(255, 255, 255, 0.5);
+}
+
+@media (max-width: 1024px) {
+  .sliderOuter {
+    margin-right: calc(-1 * clamp(20px, 5vw, 32px));
+  }
+
+  .arrowsBar {
+    left: calc(-1 * clamp(20px, 5vw, 32px));
+  }
+}
+
+@media (max-width: 640px) {
+  .description,
+  .caption {
+    text-align: left;
+  }
+}

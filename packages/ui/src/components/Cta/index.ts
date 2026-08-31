@@ -1,0 +1,1 @@
+export { CtaUI as Cta } from './CtaUI'

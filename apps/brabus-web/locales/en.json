@@ -1,0 +1,60 @@
+{
+  "navbar": {
+    "navLinks": {
+      "about": "About",
+      "brokers": "Brokers",
+      "units": "Units",
+      "contacts": "Contacts"
+    },
+    "catalog": "Catalog"
+  },
+  "hero": {
+    "title": "Brabus Island Baku",
+    "subtitle": "An exclusive residential concept by the partnership of Treva / Sabah Investment Group (SIG) and the BRABUS brand.",
+    "button": "Get the price list"
+  },
+  "about": {
+    "title": "A brutal, uncompromising engineering ethos, reflected in architecture",
+    "description": "BRABUS ISLAND Baku brings the \"One-Second-Wow\" philosophy of BRABUS — Germany's bold supercar and engineering brand — to the shores of the Caspian. The project is developed by RS Capital, a partnership between Sabah Investment Group and Reportage Group. It is a residential vision that refuses convention: sharp lines, a monochrome aesthetic, and a seafront identity shaped by BRABUS DNA."
+  },
+  "exterior": {
+  "titleBold": "EXTERIOR.",
+  "titleRegular": "An engineering island on the Caspian shore",
+  "description": "Baku, Sea Breeze coast. Sharp wave-like structures, dark monochrome materials and rigid vertical lines give the building its dominant character.",
+  "caption": "* The visuals displayed in this section are digital architectural models. Current construction and completion status is regularly updated by the developer."
+},
+"cta": {
+  "buttonText": "Request a consultation"
+},
+  "interior": {
+  "titleBold": "INTERIORS.",
+  "titleRegular": "YOUR PERSONAL MASTERPIECE",
+  "description": "Interiors inspired by supercar architecture. Carbon fiber elements, sharp contrasts, and advanced material engineering transform each residence into the owner's personal BRABUS Masterpiece. Character and ergonomics take precedence over generic comfort."
+},
+"amenities": {
+    "items": [
+      {
+        "label": "Residences & pool",
+        "title": "Twin villas",
+        "description": "A brutal unity of form and function. Maximum floor efficiency, glass structures, and direct sea access. Every villa has its own private garden and private pool."
+      },
+      {
+        "label": "Residences & pool",
+        "title": "Recovery zone",
+        "description": "A dedicated, secluded zone for residents. A sea-view pool complex designed for complete relaxation."
+      },
+      {
+        "label": "Restricted-access zones",
+        "title": "Fitness & spa area",
+        "description": "A fully equipped fitness zone and separate men's/women's saunas for privacy, along with a modern hammam and massage rooms."
+      },
+      {
+        "label": "Restricted-access zones",
+        "title": "Residents' lounge",
+        "description": "Enclosed spaces for business communication. A distinct atmosphere shaped by minimalist architecture and bespoke lighting."
+      }
+    ]},
+    "consultation": {
+  "buttonText": "Request a consultation"
+}
+}
