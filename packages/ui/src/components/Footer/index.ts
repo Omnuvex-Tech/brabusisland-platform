@@ -1,0 +1,1 @@
+export { FooterUI as Footer } from './FooterUI'

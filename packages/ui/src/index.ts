@@ -29,4 +29,9 @@ export type { AmenityItem } from './components/Amenities/AmenitiesUI';
 
 export { ConsultationUI as Consultation } from './components/Consultation/ConsultationUI'
 
+export { PlansUI as Plans } from './components/Plans/PlansUI';
+export type { PlanUnit, PlanMetaRow } from './components/Plans/PlansUI';
+
+export { FooterUI as Footer } from './components/Footer/FooterUI'
+
 export { cn } from "./lib/utils";

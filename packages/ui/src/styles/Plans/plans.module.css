@@ -1,0 +1,318 @@
+.section {
+  width: 100%;
+  background: #000000;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 130px 66px 54px;
+  box-sizing: border-box;
+}
+
+.heading {
+  margin: 0;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 51px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.ctaButton {
+  flex-shrink: 0;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 237px;
+  height: 50px;
+  padding: 0 30px;
+  gap: 10px;
+  border: 1px solid #000000;
+  background: #ffffff;
+  color: #000000;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 120%;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.15s ease;
+}
+
+.ctaButton:hover {
+  opacity: 0.85;
+}
+
+.tabsRow {
+  width: 100%;
+  max-width: 1301px;
+  height: 65px;
+  margin: 0 auto;
+  padding: 0 23px;
+  box-sizing: border-box;
+  border-top: 1px solid #ffffff6e;
+  border-bottom: 1px solid #ffffff6e;
+  display: flex;
+  align-items: center;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.tabsRow::-webkit-scrollbar {
+  display: none;
+}
+
+.tabsInner {
+  display: flex;
+  align-items: center;
+  gap:57px;
+  height: 100%;
+}
+
+.tab {
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #767676;
+  white-space: nowrap;
+  transition: color 0.15s ease;
+}
+
+.tabLine {
+  display: block;
+}
+
+.tab:hover {
+  color: #b0b0b0;
+}
+
+.tabActive {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.tabActive:hover {
+  color: #ffffff;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  width: 100%;
+  max-width: 1440px;
+  min-height: 344px;
+  margin: 0 auto;
+  padding: 56px 76px;
+  box-sizing: border-box;
+}
+
+.imageWrap {
+  position: relative;
+  flex: 0 0 729px;
+  width: 729px;
+  height: 364px;
+    position: sticky;
+  top: 100px;
+  align-self: flex-start;
+  background: #ffffff;
+}
+
+.image {
+  object-fit: contain;
+}
+
+.infoPanel {
+  flex: 0 0 516px;
+  width: 516px;
+  display: flex;
+  flex-direction: column;
+}
+
+.metaList {
+  display: flex;
+  flex-direction: column;
+}
+
+.metaRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 16px;
+  width: 100%;
+  min-height: 67px;
+  padding: 12px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.metaIcon {
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+}
+
+.metaText {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+  text-align: right;
+}
+
+.metaLabel {
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: #d4d4d4;
+}
+
+.metaValue {
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-align: right;
+  color: #ffffff;
+}
+
+.roomsList {
+  flex: 0 0 100%;
+  list-style: disc inside;
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+}
+.roomItem {
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.roomHeading {
+  list-style: none;
+  margin-top: 10px;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: #ffffff;
+}
+
+@media (max-width: 1200px) {
+  .header,
+  .tabsRow,
+  .content {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .heading {
+    font-size: 36px;
+  }
+
+  .content {
+    gap: 32px;
+  }
+
+  .imageWrap {
+    flex-basis: 55%;
+    width: 55%;
+    height: 300px;
+  }
+
+  .infoPanel {
+    flex-basis: 45%;
+    width: 45%;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 40px 20px 24px;
+  }
+
+  .heading {
+    font-size: 28px;
+  }
+
+  .ctaButton {
+    width: 100%;
+    max-width: 237px;
+  }
+
+  .tabsRow {
+    padding: 0 20px;
+    height: 52px;
+  }
+
+  .tabsInner {
+    gap: 28px;
+  }
+
+  .tab {
+    font-size: 15px;
+  }
+
+  .content {
+    flex-direction: column;
+    padding: 32px 20px;
+    gap: 24px;
+    min-height: 0;
+  }
+
+  .imageWrap {
+    width: 100%;
+    flex-basis: auto;
+    height: 220px;
+  }
+
+  .infoPanel {
+    width: 100%;
+    flex-basis: auto;
+  }
+
+  .metaValue {
+    font-size: 16px;
+  }
+
+  .roomItem,
+  .roomHeading {
+    font-size: 15px;
+  }
+}

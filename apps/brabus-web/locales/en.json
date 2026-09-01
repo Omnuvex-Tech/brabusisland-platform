@@ -18,20 +18,20 @@
     "description": "BRABUS ISLAND Baku brings the \"One-Second-Wow\" philosophy of BRABUS — Germany's bold supercar and engineering brand — to the shores of the Caspian. The project is developed by RS Capital, a partnership between Sabah Investment Group and Reportage Group. It is a residential vision that refuses convention: sharp lines, a monochrome aesthetic, and a seafront identity shaped by BRABUS DNA."
   },
   "exterior": {
-  "titleBold": "EXTERIOR.",
-  "titleRegular": "An engineering island on the Caspian shore",
-  "description": "Baku, Sea Breeze coast. Sharp wave-like structures, dark monochrome materials and rigid vertical lines give the building its dominant character.",
-  "caption": "* The visuals displayed in this section are digital architectural models. Current construction and completion status is regularly updated by the developer."
-},
-"cta": {
-  "buttonText": "Request a consultation"
-},
+    "titleBold": "EXTERIOR.",
+    "titleRegular": "An engineering island on the Caspian shore",
+    "description": "Baku, Sea Breeze coast. Sharp wave-like structures, dark monochrome materials and rigid vertical lines give the building its dominant character.",
+    "caption": "* The visuals displayed in this section are digital architectural models. Current construction and completion status is regularly updated by the developer."
+  },
+  "cta": {
+    "buttonText": "Request a consultation"
+  },
   "interior": {
-  "titleBold": "INTERIORS.",
-  "titleRegular": "YOUR PERSONAL MASTERPIECE",
-  "description": "Interiors inspired by supercar architecture. Carbon fiber elements, sharp contrasts, and advanced material engineering transform each residence into the owner's personal BRABUS Masterpiece. Character and ergonomics take precedence over generic comfort."
-},
-"amenities": {
+    "titleBold": "INTERIORS.",
+    "titleRegular": "YOUR PERSONAL MASTERPIECE",
+    "description": "Interiors inspired by supercar architecture. Carbon fiber elements, sharp contrasts, and advanced material engineering transform each residence into the owner's personal BRABUS Masterpiece. Character and ergonomics take precedence over generic comfort."
+  },
+  "amenities": {
     "items": [
       {
         "label": "Residences & pool",
@@ -53,8 +53,275 @@
         "title": "Residents' lounge",
         "description": "Enclosed spaces for business communication. A distinct atmosphere shaped by minimalist architecture and bespoke lighting."
       }
-    ]},
-    "consultation": {
-  "buttonText": "Request a consultation"
-}
+    ]
+  },
+  "consultation": {
+    "buttonText": "Request a consultation"
+  },
+  "footer": {
+  "privacy": "Privacy Policy",
+  "terms": "Terms of Use",
+  "copyright": "© 2026. All rights reserved."
+},
+  "plans": {
+    "title": "Floor plans",
+    "button": "View units",
+    "units": [
+      {
+        "id": "studio-a3",
+        "tabLabel": "STUDIO Type A3",
+        "imageAlt": "STUDIO Type A3 floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Block C, floors 3 to 13."
+          },
+          {
+            "label": "Internal area",
+            "value": "430.55 sq.ft | 40.00 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "Size varies"
+          },
+          {
+            "label": "Total area:",
+            "value": "520.43 sq.ft | 48.35 sq.m"
+          }
+        ],
+        "rooms": [
+          "Bedroom: 4.25 x 3.80 m",
+          "Kitchen + dining area: 3.05 x 2.30 m",
+          "Bathroom: 1.60 x 2.20 m",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "1-yataq-a1",
+        "tabLabel": "1 BEDROOM\nType A1",
+        "imageAlt": "1 Bedroom Type A1 floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Blocks A & B, floors 3 to 13"
+          },
+          {
+            "label": "Internal area",
+            "value": "806.00 sq.ft | 74.88 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "Size varies"
+          },
+          {
+            "label": "Total area:",
+            "value": "979.94 sq.ft | 91.04 sq.m"
+          }
+        ],
+        "rooms": [
+          "Living room + kitchen: 9.65 x 3.60",
+          "Bedroom: 3.65 x 4.05",
+          "Walk-in closet: 2.10 x 3.50",
+          "Main bathroom: 2.80 x 3.50",
+          "Guest bathroom: 1.70 x 1.45",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "2-yataq-a",
+        "tabLabel": "2 BEDROOM\nType A",
+        "imageAlt": "2 Bedroom Type A floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Block B, floors 5 to 13"
+          },
+          {
+            "label": "Internal area",
+            "value": "1328.37 sq.ft | 123.41 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "230.24 sq.ft | 21.39 sq.m"
+          },
+          {
+            "label": "Total area:",
+            "value": "1558.61 sq.ft | 144.80 sq.m"
+          }
+        ],
+        "rooms": [
+          "Living room: 3.70 x 4.75",
+          "Kitchen + dining area: 5.10 x 2.95",
+          "Bedroom 1: 5.30 x 4.50",
+          "Bathroom: 3.65 x 2.05",
+          "Bedroom 2: 4.90 x 3.65",
+          "Bathroom: 2.75 x 1.70",
+          "Guest bathroom: 1.60 x 1.75",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "3-yataq-a",
+        "tabLabel": "3 BEDROOM\nType A",
+        "imageAlt": "3 Bedroom Type A floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Block A, floors 3 to 11"
+          },
+          {
+            "label": "Internal area",
+            "value": "2458.26 sq.ft | 228.38 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "855.30 sq.ft | 79.46 sq.m"
+          },
+          {
+            "label": "Total area:",
+            "value": "3313.56 sq.ft | 307.84 sq.m"
+          }
+        ],
+        "rooms": [
+          "Living + dining room: 11.70 x 5.90",
+          "Kitchen: 7.20 x 2.50",
+          "Bedroom 1: 7.80 x 3.10",
+          "Walk-in closet: 3.45 x 2.65",
+          "Bathroom: 5.60 x 2.60",
+          "Bedroom 2: 4.00 x 3.50",
+          "Walk-in closet: 2.25 x 2.00",
+          "Bathroom: 2.95 x 2.25",
+          "Bedroom 3: 4.70 x 3.50",
+          "Bathroom: 4.10 x 1.95",
+          "Guest bathroom: 1.70 x 1.70",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "dupleks-a5",
+        "tabLabel": "Duplex Type A5",
+        "imageAlt": "Duplex Type A5 floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Available on floors 1 & 2"
+          },
+          {
+            "label": "Internal area",
+            "value": "1486.60 sq.ft | 138.11 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "826.88 sq.ft | 76.82 sq.m"
+          },
+          {
+            "label": "Total area:",
+            "value": "2313.48 sq.ft | 214.93 sq.m"
+          }
+        ],
+        "rooms": [
+          "1st floor:",
+          "Living + dining room: 5.30 x 3.60",
+          "Kitchen: 2.40 x 2.40",
+          "Guest bathroom: 1.60 x 1.80",
+          "Private garden (size varies)",
+          "2nd floor:",
+          "Bedroom 1: 3.10 x 4.00",
+          "Bathroom: 2.90 x 2.50",
+          "Walk-in closet: 1.90 x 3.80",
+          "Bedroom 2: 3.15 x 4.00",
+          "Bathroom: 4.15 x 3.20",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "dupleks-a7",
+        "tabLabel": "Duplex Type A7",
+        "imageAlt": "Duplex Type A7 floor plan",
+        "meta": [
+          {
+            "label": "Block & floor",
+            "value": "Available on floors 1 & 2"
+          },
+          {
+            "label": "Internal area",
+            "value": "2019.98 sq.ft | 187.663 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "929.67 sq.ft | 86.37 sq.m"
+          },
+          {
+            "label": "Total area:",
+            "value": "2949.66 sq.ft | 274.033 sq.m"
+          }
+        ],
+        "rooms": [
+          "1st floor:",
+          "Living + dining room: 3.75 x 6.00",
+          "Kitchen: 2.40 x 4.35",
+          "Bedroom: 3.45 x 5.35",
+          "Bathroom: 1.75 x 3.00",
+          "Walk-in closet: 1.70 x 3.10",
+          "Guest bathroom: 1.60 x 1.60",
+          "Private garden (size varies)",
+          "2nd floor:",
+          "Bedroom 1: 3.15 x 5.55",
+          "Bathroom: 2.85 x 2.05",
+          "Walk-in closet: 1.75 x 5.55",
+          "Bedroom 2: 4.00 x 5.75",
+          "Bathroom: 4.15 x 2.00",
+          "Walk-in closet: 2.35 x 3.50",
+          "Balcony (size varies)"
+        ]
+      },
+      {
+        "id": "villa",
+        "tabLabel": "VILLA",
+        "imageAlt": "Villa floor plan",
+        "meta": [
+          {
+            "label": "Internal area",
+            "value": "3521.30 sq.ft | 327.14 sq.m"
+          },
+          {
+            "label": "External area",
+            "value": "1241.40 sq.ft | 115.33 sq.m"
+          },
+          {
+            "label": "Total area:",
+            "value": "4762.70 sq.ft | 442.47 sq.m"
+          }
+        ],
+        "rooms": [
+          "Ground floor:",
+          "Living + dining room: 7.70 x 5.45",
+          "Kitchen: 2.85 x 3.65",
+          "Staff room: 1.35 x 2.45",
+          "Staff bathroom: 1.55 x 1.45",
+          "Guest bathroom: 3.05 x 1.20",
+          "Garage: 3.40 x 6.05",
+          "1st floor:",
+          "Bedroom 1: 3.90 x 5.00",
+          "Bathroom: 2.65 x 1.70",
+          "Walk-in closet: 2.85 x 1.00",
+          "Bedroom 2: 3.75 x 5.00",
+          "Bathroom: 2.55 x 1.70",
+          "Walk-in closet: 2.75 x 1.00",
+          "Bedroom 3: 3.85 x 3.85",
+          "Bathroom: 2.65 x 1.70",
+          "Walk-in closet: 2.85 x 1.00",
+          "Bedroom 4: 3.75 x 3.85",
+          "Bathroom: 2.55 x 1.70",
+          "Walk-in closet: 2.75 x 1.50",
+          "Balcony (size varies)",
+          "2nd floor:",
+          "Bedroom: 4.80 x 4.05",
+          "Bathroom: 2.75 x 6.20",
+          "Walk-in closet: 5.20 x 2.30",
+          "Utility room: 7.65 x 2.80"
+        ]
+      }
+    ]
+  }
 }

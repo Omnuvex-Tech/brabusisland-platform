@@ -7,6 +7,7 @@ import { Cta } from './components/Cta/cta-wrapper';
 import { Interior } from './components/Interior/interior-wrapper';
 import { Amenities } from './components/Amenities/amenities-wrapper';
 import { Consultation } from './components/Consultation/consultation-wrapper';
+import { Plans } from './components/Plans/plans-wrapper';
 
 export const dynamic = 'force-dynamic';
 
@@ -30,6 +31,7 @@ export default async function Home({
       <Interior locale={locale} />
       <Amenities locale={locale} />
       <Consultation locale={locale} />
+      <Plans locale={locale}/>
 
     </>
   );

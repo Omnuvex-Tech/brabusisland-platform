@@ -5,6 +5,7 @@ import localFont from 'next/font/local';
 import { NotifyProvider, NotifyContainer } from '@repo/ui';
 import { QueryProvider } from './providers';
 import { Navbar } from './components/Navbar/navbar-wrapper';
+import { Footer } from './components/Footer/footer-wrapper';
 import { isValidLocale, LOCALES } from '@/lib/i18n';
 import { config } from '@/config';
 import '../globals.css';
@@ -57,6 +58,7 @@ export default async function LocaleLayout({
           <NotifyProvider>
             <Navbar locale={locale} />
             <main>{children}</main>
+            <Footer locale={locale}/>
             <NotifyContainer />
           </NotifyProvider>
         </QueryProvider>
