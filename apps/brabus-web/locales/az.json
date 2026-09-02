@@ -323,5 +323,23 @@
         ]
       }
     ]
+  },
+    "contact": {
+    "heading": "Əlaqə",
+    "email": "info@treva.realestate",
+    "address": "Ziya Yusifzadə 10, Sabah Residence / Sea Breeze Sales Office",
+    "phone": "+994 50 277 2662 / *2662",
+    "phoneHref": "+994502772662",
+    "form": {
+      "title": "Bizimlə əlaqə saxlayın. Sorğu göndərin.",
+      "name": "Ad *",
+      "surname": "Soyad *",
+      "message": "Mesaj *",
+      "number": "Nömrə *",
+      "send": "Göndər",
+      "consent": "Məlumatlarınızı təqdim etməklə, onların GDPR qaydalarına uyğun işlənməsinə və layihənin rəsmi satış platforması olan Treva Real Estate-in satış komandasına ötürülməsinə razılıq vermiş olursunuz. BRABUS layihənin brendinq tərəfdaşıdır; bütün hüquqi, tikinti və kommersiya öhdəlikləri developerə məxsusdur."
+    },
+    "mapAlt": "Brabus Island Baku xəritədə yerləşməsi",
+    "mapButton": "Xəritədə bax"
   }
 }

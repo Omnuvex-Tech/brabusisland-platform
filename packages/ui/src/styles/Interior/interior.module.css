@@ -148,8 +148,21 @@
 }
 
 @media (max-width: 640px) {
-  .description,
-  .caption {
-    text-align: left;
+  .section {
+    padding-top: 65px;
+  }
+
+  .header {
+    gap: 21px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+
+  .arrowIcon {
+    height: 79% !important;
+    width: 80% !important;
   }
 }

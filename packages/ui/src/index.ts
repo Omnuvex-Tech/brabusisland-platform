@@ -34,4 +34,7 @@ export type { PlanUnit, PlanMetaRow } from './components/Plans/PlansUI';
 
 export { FooterUI as Footer } from './components/Footer/FooterUI'
 
+export { ContactUI as Contact } from './components/Contact/ContactUI';
+export type { ContactInfoItem } from './components/Contact/ContactUI';
+
 export { cn } from "./lib/utils";

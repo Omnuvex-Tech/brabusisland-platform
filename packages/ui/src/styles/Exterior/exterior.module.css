@@ -307,8 +307,26 @@
 }
 
 @media (max-width: 640px) {
-  .description,
-  .caption {
+  .section {
+    padding-top: 65px;
+  }
+
+  .header {
+    gap: 21px;
+  }
+
+  .description {
+    font-size: 18px;
     text-align: left;
+  }
+
+  .caption {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .arrowIcon {
+    height: 79% !important;
+    width: 80% !important;
   }
 }

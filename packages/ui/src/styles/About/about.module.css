@@ -53,9 +53,6 @@
   max-width: 625px;
   aspect-ratio: 1 / 1;
   margin-left: auto;
-  /* padding-top: clamp(24px, 5vw, 72px);
-  padding-left: clamp(12px, 2vw, 24px);
-  padding-right: clamp(12px, 2vw, 24px); */
 }
 
 .image {
@@ -87,10 +84,14 @@
 }
 
 @media (max-width: 640px) {
-  .section {
-    border-radius: 16px;
-  }
 
+  .section{
+    padding-top: 55px;
+}
+
+.title{
+  font-size: 21px;
+}
   .description {
     text-align: left;
   }

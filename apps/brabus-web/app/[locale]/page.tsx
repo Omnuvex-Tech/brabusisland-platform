@@ -8,6 +8,7 @@ import { Interior } from './components/Interior/interior-wrapper';
 import { Amenities } from './components/Amenities/amenities-wrapper';
 import { Consultation } from './components/Consultation/consultation-wrapper';
 import { Plans } from './components/Plans/plans-wrapper';
+import { Contact } from './components/Contact/contact-wrapper';
 
 export const dynamic = 'force-dynamic';
 
@@ -32,6 +33,7 @@ export default async function Home({
       <Amenities locale={locale} />
       <Consultation locale={locale} />
       <Plans locale={locale}/>
+      <Contact locale={locale}/>
 
     </>
   );

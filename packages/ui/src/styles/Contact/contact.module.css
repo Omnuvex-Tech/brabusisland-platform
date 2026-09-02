@@ -1,0 +1,330 @@
+.section {
+    width: 100%;
+    padding-bottom: 90px;
+    background: #000000;
+}
+
+.topRow {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 100px 100px 100px;
+    box-sizing: border-box;
+}
+
+.infoCol {
+    flex: 0 0 420px;
+    width: 420px;
+}
+
+.heading {
+    margin: 0 0 59px;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 51px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.infoList {
+    display: flex;
+    flex-direction: column;
+    gap: 17px;
+}
+
+.infoRow {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    text-decoration: none;
+    color: inherit;
+}
+
+.infoIcon {
+    flex-shrink: 0;
+    width: 35px;
+    height: 35px;
+}
+
+.infoDivider {
+    flex-shrink: 0;
+    width: 1px;
+    align-self: stretch;
+    min-height: 28px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.infoText {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 140%;
+    letter-spacing: -0.02em;
+    color: #c9c9c9;
+}
+
+.formCol {
+    flex: 1 1 0;
+    min-width: 0;
+}
+
+.formCard {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 649px;
+    margin-left: auto;
+    padding: 23px 25px;
+    border: 1px solid #ffffff;
+    box-sizing: border-box;
+}
+
+.formTitle {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+.formField {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 12px;
+}
+
+.formInput {
+    width: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+}
+
+.formInput::placeholder {
+    color: #808689;
+}
+
+.phoneAndSend {
+    display: flex;
+    align-items: stretch;
+    gap: 16px;
+}
+
+.phoneRow {
+    flex: 1 1 0;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    padding-bottom: 12px;
+    min-width: 0;
+}
+
+.countrySelect {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+.countryFlag {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.countryCode {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: -0.02em;
+    color: #ffffff73;
+}
+
+.countryArrow {
+    width: 30px;
+    height: 24px;
+}
+
+.phoneDivider {
+    flex-shrink: 0;
+    width: 1px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.25);
+}
+
+.sendButton {
+    color: #fff;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    cursor: pointer;
+    background: #e40623;
+    flex-shrink: 0;
+    align-items: center;
+    min-width: 112px;
+    padding: 0px 32px;
+    font-family: DIN Pro, sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    transition: opacity .15s;
+}
+
+.sendButton:hover {
+    opacity: 0.85;
+}
+
+.consentText {
+    margin: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #767676;
+}
+
+.mapWrap {
+    position: relative;
+    width: 100%;
+    max-width: 1120px;
+    height: 251px;
+    margin: 0 auto;
+    padding: 0 100px 60px;
+    box-sizing: content-box;
+}
+
+.mapImage {
+    object-fit: cover;
+}
+
+.mapButton {
+    color: #000;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    white-space: nowrap;
+    background: #fff;
+    justify-content: center;
+    align-items: center;
+    height: 51px;
+    padding: 0 36px;
+    font-family: DIN Pro, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: background-color .15s;
+    display: inline-flex;
+    position: absolute;
+    top: 51%;
+    left: 180px;
+    transform: translateY(-50%);
+}
+
+.mapButton:hover {
+    background: #E40623;
+    color: white;
+}
+
+@media (max-width: 1200px) {
+    .topRow {
+        padding: 80px 40px 48px;
+        gap: 40px;
+    }
+
+    .infoCol {
+        flex-basis: 320px;
+        width: 320px;
+    }
+
+    .heading {
+        font-size: 36px;
+    }
+
+    .formCard {
+        max-width: 100%;
+        padding: 28px 28px;
+    }
+
+    .mapWrap {
+        padding: 0 40px 48px;
+        height: 220px;
+        width: 83%;
+    }
+
+    .mapButton {
+        left: 64px;
+    }
+}
+
+@media (max-width: 768px) {
+    .topRow {
+        flex-direction: column;
+        padding: 48px 20px 32px;
+        gap: 40px;
+    }
+
+    .infoCol {
+        width: 100%;
+        flex-basis: auto;
+    }
+
+    .heading {
+        font-size: 28px;
+        margin-bottom: 24px;
+    }
+
+    .formCol {
+        width: 100%;
+    }
+
+    .formCard {
+        margin-left: 0;
+        padding: 24px 20px;
+        gap: 18px;
+    }
+
+    .formInput,
+    .countryCode {
+        font-size: 16px;
+    }
+
+    .phoneAndSend {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .sendButton {
+        width: 100%;
+        height: 48px;
+    }
+
+    .mapWrap {
+        padding: 0 20px 40px;
+        height: 200px;
+        width: 82%;
+    }
+
+    .mapButton {
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 0 18px;
+        height: 42px;
+        font-size: 14px;
+    }
+}

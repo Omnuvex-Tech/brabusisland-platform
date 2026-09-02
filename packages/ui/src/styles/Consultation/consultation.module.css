@@ -36,7 +36,8 @@
 }
 
 .button:hover {
-  background: #c00420;
+background: #000000;
+
 }
 
 @media (max-width: 768px) {

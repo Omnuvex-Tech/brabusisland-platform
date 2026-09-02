@@ -109,11 +109,8 @@
 
 @media (max-width: 768px) {
     .section {
-        padding-top: 48px;
-        padding-bottom: 48px;
+        padding: 50px 0;
         gap: 40px;
-        padding-left: 20px;
-        padding-right: 20px;
     }
 
     .row,
@@ -123,17 +120,31 @@
         gap: 24px;
     }
 
+    .row .imageBlock .image {
+        width: 96% !important;
+        left: 17px !important;
+    }
+
+    .rowReversed .imageBlock .image {
+        width: 96% !important;
+        left: 0 !important;
+        right: 0 !important;
+    }
+
     .imageBlock {
         width: 100%;
         flex-basis: auto;
         height: 220px;
     }
 
-    .textBlockRight,
+    .textBlockRight {
+        padding: 0 13px 0 18px;
+        gap: 10px;
+    }
+
     .textBlockLeft {
-        padding: 0;
-        align-items: center;
-        text-align: center;
+        padding: 0 13px 0 13px;
+        gap: 10px;
     }
 
     .title {
@@ -141,10 +152,24 @@
     }
 
     .label {
-        font-size: 15px;
+        font-size: 13px;
     }
 
     .description {
-        font-size: 16px;
+        font-size: 15px;
+        max-width: 100%;
+        padding-top: 0;
+    }
+}
+
+@media(max-width: 660px) {
+    .row .imageBlock .image {
+        left: 15px !important;
+    }
+
+    .rowReversed .imageBlock .image {
+        width: 96% !important;
+        left: 0 !important;
+        right: 0 !important;
     }
 }
