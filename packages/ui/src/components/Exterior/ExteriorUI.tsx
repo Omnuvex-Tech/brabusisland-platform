@@ -2,6 +2,7 @@
 
 import { useCallback, useEffect, useLayoutEffect, useRef, useState } from 'react';
 import Image from 'next/image';
+import { motion, Variants } from 'framer-motion';
 import styles from '../../styles/Exterior/exterior.module.css';
 
 interface ExteriorImage {
@@ -21,6 +22,24 @@ interface ExteriorUIProps {
 
 const TRANSITION_MS = 500;
 
+const fadeInUp: Variants = {
+  hidden: { opacity: 0, y: 25 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.9, ease: [0.25, 0.1, 0.25, 1.0] }
+  }
+};
+
+const wordVariants: Variants = {
+  hidden: { opacity: 0, y: 12 },
+  visible: { 
+    opacity: 1, 
+    y: 0,
+    transition: { duration: 0.5, ease: [0.25, 0.1, 0.25, 1.0] }
+  }
+};
+
 export function ExteriorUI({
   titleBold,
   titleRegular,
@@ -36,7 +55,6 @@ export function ExteriorUI({
     return null;
   }
 
-  // [cloneOfLast, ...realImages, cloneOfFirst]
   const extended: ExteriorImage[] = [
     images[count - 1]!,
     ...images,
@@ -47,11 +65,10 @@ export function ExteriorUI({
   const slideRefs = useRef<(HTMLDivElement | null)[]>([]);
   const isJumping = useRef(false);
 
-  const [index, setIndex] = useState(1); // extended massivində indeks
+  const [index, setIndex] = useState(1); 
   const [withTransition, setWithTransition] = useState(true);
   const [offsets, setOffsets] = useState<number[]>([]);
 
-  // CSS-in özünün render etdiyi en/boşluğu OXUYUR, heç nəyi təyin etmir
   const measureOffsets = useCallback(() => {
     const next = slideRefs.current.map((el) => el?.offsetLeft ?? 0);
     setOffsets(next);
@@ -98,18 +115,48 @@ export function ExteriorUI({
   }, [withTransition]);
 
   const offsetX = offsets[index] ?? 0;
+  const descriptionWords = description.split(' ');
 
   return (
     <section id="exterior" className={styles.section}>
       <div className={styles.header}>
-        <h2 className={styles.title}>
+        <motion.h2 
+          className={styles.title}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          variants={fadeInUp}
+        >
           <span className={styles.titleBold}>{titleBold}</span>{' '}
           <span className={styles.titleRegular}>{titleRegular}</span>
-        </h2>
-        <p className={styles.description}>{description}</p>
+        </motion.h2>
+
+        <motion.p 
+          className={styles.description}
+          initial="hidden"
+          whileInView="visible"
+          viewport={{ once: true, amount: 0.3 }}
+          transition={{ staggerChildren: 0.03, delayChildren: 0.2 }}
+        >
+          {descriptionWords.map((word, i) => (
+            <motion.span
+              key={`${word}-${i}`}
+              variants={wordVariants}
+              style={{ display: 'inline-block', marginRight: '0.25em' }}
+            >
+              {word}
+            </motion.span>
+          ))}
+        </motion.p>
       </div>
 
-      <div className={styles.sliderOuter}>
+      <motion.div 
+        className={styles.sliderOuter}
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true, amount: 0.2 }}
+        transition={{ duration: 1.1, ease: [0.25, 0.1, 0.25, 1.0], delay: 0.3 }}
+      >
         <div className={styles.sliderWrapper}>
           <div
             ref={trackRef}
@@ -172,9 +219,17 @@ export function ExteriorUI({
             <Image src={arrowRightSrc} alt="" fill className={styles.arrowIcon} />
           </button>
         </div>
-      </div>
+      </motion.div>
 
-      <p className={styles.caption}>{caption}</p>
+      <motion.p 
+        className={styles.caption}
+        initial={{ opacity: 0, y: 15 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.8, ease: [0.25, 0.1, 0.25, 1.0], delay: 0.4 }}
+      >
+        {caption}
+      </motion.p>
     </section>
   );
 }

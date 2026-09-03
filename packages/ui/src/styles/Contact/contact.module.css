@@ -132,6 +132,11 @@
     min-width: 0;
 }
 
+.countrySelectWrap {
+    position: relative;
+    flex-shrink: 0;
+}
+
 .countrySelect {
     flex-shrink: 0;
     display: flex;
@@ -141,13 +146,6 @@
     border: none;
     padding: 0;
     cursor: pointer;
-}
-
-.countryFlag {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 .countryCode {
@@ -161,6 +159,67 @@
 .countryArrow {
     width: 30px;
     height: 24px;
+    transition: transform 0.2s ease;
+}
+
+.countryArrowOpen {
+    transform: rotate(180deg);
+}
+
+.countryPanel {
+    z-index: 30;
+    background: #000;
+    border: 1px solid #ffffff40;
+    width: 200px;
+    max-height: 226px;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    position: absolute;
+    top: calc(100% + 11px);
+    overflow-y: auto;
+}
+
+.countryOption {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    width: 100%;
+    padding: 10px 16px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.15s ease;
+}
+
+.countryOption:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+.countryOptionActive {
+    background-color: rgba(228, 6, 35, 0.15);
+}
+
+.countryOptionLabel {
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: #ffffff;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.countryOptionCode {
+    flex-shrink: 0;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: -0.02em;
+    color: #808689;
 }
 
 .phoneDivider {
@@ -326,5 +385,9 @@
         padding: 0 18px;
         height: 42px;
         font-size: 14px;
+    }
+
+    .countryPanel {
+        width: 220px;
     }
 }

@@ -1,5 +1,7 @@
 import { Plans as PlansUI } from '@repo/ui';
 import { getDictionary } from '@/lib/i18n';
+import { getPriceListHref } from '@/lib/priceList';
+
 
 const IMAGES: Record<string, string> = {
   'studio-a3': '/images/plans-1.png',
@@ -19,7 +21,7 @@ const ICONS: Record<string, number[]> = {
   '3-yataq-a': [4, 1, 3, 2],
   'dupleks-a5': [4, 1, 3, 2],
   'dupleks-a7': [4, 1, 3, 2],
-  villa: [1, 3, 2], 
+  villa: [1, 3, 2],
 };
 
 export function Plans({ locale }: { locale: string }) {
@@ -38,8 +40,7 @@ export function Plans({ locale }: { locale: string }) {
     <PlansUI
       title={t.plans.title}
       buttonLabel={t.plans.button}
-      buttonHref="#units"
-      units={units}
+      buttonHref={getPriceListHref(locale)} units={units}
       iconBasePath="/images/planicon-"
     />
   );

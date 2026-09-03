@@ -10,9 +10,15 @@ export interface LanguageSwitcherProps {
   locales: string[];
   activeLocale: string;
   onLocaleChange: (locale: string) => void;
+  variant?: 'dropdown' | 'inline';
 }
 
-const LanguageSwitcher = ({ locales, activeLocale, onLocaleChange }: LanguageSwitcherProps) => {
+const LanguageSwitcher = ({
+  locales,
+  activeLocale,
+  onLocaleChange,
+  variant = 'dropdown',
+}: LanguageSwitcherProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const rootRef = useRef<HTMLDivElement>(null);
 
@@ -33,6 +39,35 @@ const LanguageSwitcher = ({ locales, activeLocale, onLocaleChange }: LanguageSwi
     setIsOpen(false);
   };
 
+  // ---- MOBILE MENU: hər dil öz düyməsi, hamısı görünür, dropdown yoxdur ----
+  if (variant === 'inline') {
+    return (
+      <div className={styles.inlineRow}>
+        {locales.map((code) => (
+          <button
+            key={code}
+            type="button"
+            className={`${styles.inlineOption} ${
+              code === activeLocale ? styles.inlineOptionActive : ''
+            }`}
+            onClick={() => onLocaleChange(code)}
+          >
+            <span className={styles.code}>{code.toUpperCase()}</span>
+            <Image
+              src={flagSrc(code)}
+              alt=""
+              width={18}
+              height={18}
+              className={styles.flag}
+              aria-hidden="true"
+            />
+          </button>
+        ))}
+      </div>
+    );
+  }
+
+  // ---- DESKTOP: dropdown ----
   return (
     <div className={styles.wrapper} ref={rootRef}>
       <button

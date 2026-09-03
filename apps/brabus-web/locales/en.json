@@ -10,18 +10,18 @@
   },
   "hero": {
     "title": "Brabus Island Baku",
-    "subtitle": "An exclusive residential concept by the partnership of Treva / Sabah Investment Group (SIG) and the BRABUS brand.",
-    "button": "Get the price list"
+    "subtitle": "An exclusive residential concept co-created through the brand partnership of Sabah Investment Group (SIG) and BRABUS.",
+    "button": "Explore floor plans"
   },
   "about": {
-    "title": "A brutal, uncompromising engineering ethos, reflected in architecture",
-    "description": "BRABUS ISLAND Baku brings the \"One-Second-Wow\" philosophy of BRABUS — Germany's bold supercar and engineering brand — to the shores of the Caspian. The project is developed by RS Capital, a partnership between Sabah Investment Group and Reportage Group. It is a residential vision that refuses convention: sharp lines, a monochrome aesthetic, and a seafront identity shaped by BRABUS DNA."
+    "title": "BRUTAL AND RIGID ENGINEERING REFLECTED IN ARCHITECTURE",
+    "description": "BRABUS ISLAND Baku brings the \"One-Second-Wow\" philosophy of BRABUS, Germany's bold supercar and engineering brand, to the shores of the Caspian Sea. Developed by RS Capital (a collaboration between Sabah Investment Group and Reportage Group), the official sales are handled by Treva Real Estate. It is a unique waterfront residence vision shaped by sharp lines, monochrome aesthetics, and pure BRABUS DNA-defying conventional living standards."
   },
   "exterior": {
     "titleBold": "EXTERIOR.",
-    "titleRegular": "An engineering island on the Caspian shore",
-    "description": "Baku, Sea Breeze coast. Sharp wave-like structures, dark monochrome materials and rigid vertical lines give the building its dominant character.",
-    "caption": "* The visuals displayed in this section are digital architectural models. Current construction and completion status is regularly updated by the developer."
+    "titleRegular": "AN ENGINEERING ISLAND ON THE CASPIAN SHORE",
+    "description": "Baku, Sea Breeze coast. Sharp wave-like structures, dark monochrome materials, and strong vertical lines lend the building a dominant architectural presence.",
+    "caption": "* Visuals displayed in this section are digital architectural renders. Current construction and execution status is regularly updated by the developer."
   },
   "cta": {
     "buttonText": "Request a consultation"
@@ -331,10 +331,10 @@
     "phone": "+994 50 277 2662 / *2662",
     "phoneHref": "+994502772662",
     "form": {
-      "title": "Contact us. Submit a request.",
+      "title": "CONTACT US. SUBMIT A REQUEST.",
       "name": "Name *",
       "surname": "Surname *",
-      "message": "Message *",
+      "message": "Message",
       "number": "Number *",
       "send": "Send",
       "consent": "By submitting your information, you consent to the processing of your personal data in accordance with GDPR regulations and its transfer to the sales team of Treva Real Estate, the official sales platform for the project. BRABUS is a branding partner of the project; all legal, construction, and commercial obligations belong to the developer."

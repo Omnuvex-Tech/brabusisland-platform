@@ -9,17 +9,17 @@
     "catalog": "Kataloq"
   },
   "hero": {
-    "title": "Brabus Island Baku",
-    "subtitle": "Treva / Sabah Investment Group (SIG) və BRABUS brend tərəfdaşlığının eksklüziv yaşayış konsepsiyası.",
-    "button": "Qiymət siyahısını əldə et"
+    "title": "BRABUS ISLAND BAKU",
+    "subtitle": "Sabah Investment Group (SIG) və BRABUS brend tərəfdaşlığının eksklüziv yaşayış konsepsiyası.",
+    "button": "Mənzil planlarına keçid et"
   },
   "about": {
-    "title": "Brutal və sərt mühəndisliyin memarlıqdakı əksi",
-    "description": "BRABUS ISLAND Baku — Almaniyanın cəsarətli superkar və mühəndislik brendi olan BRABUS-un \"One-Second-Wow\" fəlsəfəsini Xəzər sahilinə daşıyır. Layihə RS Capital (Sabah Investment Group və Reportage Group əməkdaşlığı) tərəfindən RS Capital tərəfdaşlığı çərçivəsində reallaşdırılır. Bu, şablon yaşayış qaydalarını qəbul etməyən, kəskin xətləri, monoxrom estetikası və BRABUS DNT-si ilə formalaşan unikal dənizkənarı rezidensiya vizyonudur."
+    "title": "BRUTAL VƏ SƏRT MÜHƏNDİSLİYİN MEMARLIQDAKI ƏKSİ",
+    "description": "BRABUS ISLAND Baku - Almaniyanın cəsarətli superkar və mühəndislik brendi olan BRABUS-un \"One-Second-Wow\" fəlsəfəsini Xəzər sahilinə daşıyır. Layihə RS Capital (Sabah Investment Group və Reportage Group əməkdaşlığı) tərəfindən reallaşdırılır, rəsmi satışı isə Treva Real Estate tərəfindən həyata keçirilir. Bu, şablon yaşayış qaydalarını qəbul etməyən, kəskin xətləri, monoxrom estetikası və BRABUS DNT-si ilə formalaşan unikal dənizkənarı rezidensiya vizyonudur."
   },
   "exterior": {
     "titleBold": "EKSTERYER.",
-    "titleRegular": "Xəzərin sahilində mühəndislik adası",
+    "titleRegular": "XƏZƏRİN SAHİLİNDƏ MÜHƏNDİSLİK ADASI",
     "description": "Bakı, Sea Breeze sahili. Kəskin dalğavari strukturlar, tünd monoxrom materiallar və sərt şaquli xətlər binaya dominant xarakter qazandırır.",
     "caption": "* Bu bölmədə nümayiş olunan vizuallar rəqəmsal memarlıq modelləridir. Cari tikinti və icra statusu tərtibatçı tərəfindən mütəmadi yenilənir."
   },
@@ -28,7 +28,7 @@
   },
   "interior": {
     "titleBold": "İNTERYER.",
-    "titleRegular": "SİZİN FƏRDİ SƏNƏT ƏSƏRİNİZ",
+    "titleRegular": "SİZİN FƏRDİ SƏNƏT ƏSƏRİNİZ.",
     "description": "Superkarların arxitekturasından ilhamlanan interyerlər. Karbon elementləri, kəskin kontrastlar və material mühəndisliyi ilə hər rezidensiya sahibinin şəxsi sənət əsərinə (BRABUS Masterpiece) çevrilir. Komfort deyil, xarakter və erqonomika ön plandadır."
   },
   "amenities": {
@@ -331,13 +331,13 @@
     "phone": "+994 50 277 2662 / *2662",
     "phoneHref": "+994502772662",
     "form": {
-      "title": "Bizimlə əlaqə saxlayın. Sorğu göndərin.",
+      "title": "BİZİMLƏ ƏLAQƏ. SORĞU GÖNDƏRİN.",
       "name": "Ad *",
       "surname": "Soyad *",
-      "message": "Mesaj *",
+      "message": "Mesaj",
       "number": "Nömrə *",
       "send": "Göndər",
-      "consent": "Məlumatlarınızı təqdim etməklə, onların GDPR qaydalarına uyğun işlənməsinə və layihənin rəsmi satış platforması olan Treva Real Estate-in satış komandasına ötürülməsinə razılıq vermiş olursunuz. BRABUS layihənin brendinq tərəfdaşıdır; bütün hüquqi, tikinti və kommersiya öhdəlikləri developerə məxsusdur."
+      "consent": "Məlumatları göndərməklə fərdi məlumatlarınızın GDPR qaydalarına uyğun işlənməsinə və layihənin rəsmi satış platforması olan Treva Real Estate satış komandasına ötürülməsinə razılıq verirsiniz. BRABUS layihənin brend tərəfdaşıdır; hüquqi, tikinti və kommersiya öhdəlikləri tərtibatçı tərəfə məxsusdur."
     },
     "mapAlt": "Brabus Island Baku xəritədə yerləşməsi",
     "mapButton": "Xəritədə bax"

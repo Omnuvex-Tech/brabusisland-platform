@@ -82,8 +82,7 @@
 }
 
 .catalogButton:hover {
-background: #E40623;
-;
+  background: #E40623;
 }
 
 .languageSwitcherWrap {
@@ -91,12 +90,193 @@ background: #E40623;
   align-items: center;
 }
 
+.burger {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  padding: 0;
+  background: #ffffff;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.burger:hover {
+  border-color: #111111;
+}
+
+.mobileOverlay {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  opacity: 0;
+  transform: translateY(-16px);
+  visibility: hidden;
+  pointer-events: none;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0.3s;
+}
+
+.mobileOverlayOpen {
+  opacity: 1;
+  transform: translateY(0);
+  visibility: visible;
+  pointer-events: auto;
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease,
+    visibility 0s linear 0s;
+}
+
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 20px;
+  border-bottom: 1px solid #eeeeee;
+  flex-shrink: 0;
+}
+
+.closeBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid #e0e0e0;
+  background: #ffffff;
+  color: #111111;
+  cursor: pointer;
+}
+
+.closeBtn:hover {
+  border-color: #111111;
+}
+
+.mobileNavArea {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 36px;
+  padding: 32px 24px;
+  overflow-y: auto;
+}
+
+.mobileNavList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 28px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mobileNavLink {
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 120%;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111111;
+  text-decoration: none;
+}
+
+.mobileNavLink:hover {
+  color: #e40623;
+}
+
+.mobileCatalogButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 300px;
+  height: 46px;
+  padding: 0 20px;
+  background: #111111;
+  color: #ffffff;
+  font-family: 'DIN Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.mobileCatalogButton:hover {
+  background: #e40623;
+}
+
+.mobileLangRow {
+  flex-shrink: 0;
+  padding: 20px;
+  border-top: 1px solid #eeeeee;
+}
+
 @media (max-width: 1024px) {
   .inner {
     padding: 12px clamp(16px, 5vw, 40px);
   }
 
-  .nav {
+  .navList {
+    margin-left: 32px;
+    gap: 20px;
+  }
+
+  .catalogButton {
+    padding: 0 12px;
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 860px) {
+  .navList,
+  .actions {
     display: none;
+  }
+
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 480px) {
+  .inner {
+    padding: 10px 16px;
+  }
+
+  .logoImage {
+    width: 110px;
+    height: 32px;
+  }
+
+  .burger,
+  .closeBtn {
+    width: 40px;
+    height: 40px;
+  }
+
+  .mobileNavList {
+    gap: 22px;
+  }
+
+  .mobileNavLink {
+    font-size: 16px;
+  }
+
+  .mobileLangRow {
+    padding: 16px;
   }
 }
