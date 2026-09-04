@@ -1,0 +1,1 @@
+export { PrivacyPolicyUI as PrivacyPolicy } from './PrivacyPolicyUI';

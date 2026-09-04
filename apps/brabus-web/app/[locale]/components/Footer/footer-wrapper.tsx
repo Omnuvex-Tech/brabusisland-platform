@@ -30,7 +30,7 @@ export function Footer({ locale }: { locale: string }) {
         { label: t.navbar.navLinks.about, href: '#about' },
        { label: t.navbar.navLinks.brokers, href: getBrokersHref(locale), target: '_blank' },
         { label: t.navbar.navLinks.units, href: getPriceListHref(locale), target: '_blank' },
-        { label: t.navbar.navLinks.contacts, href: '#contacts' },
+        { label: t.navbar.navLinks.contacts, href: '#contact' },
       ]}
       catalogLabel={t.navbar.catalog}
       catalogHref={CATALOGS[locale] ?? CATALOGS.az ?? '/catalogue/brabus-island-catalogue-az.pdf'}

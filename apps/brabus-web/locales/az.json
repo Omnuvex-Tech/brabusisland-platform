@@ -341,5 +341,18 @@
     },
     "mapAlt": "Brabus Island Baku xəritədə yerləşməsi",
     "mapButton": "Xəritədə bax"
+  },
+  "privacyPolicy": {
+    "title": "Məxfilik siyasəti",
+    "intro": "Vebsaytımızı ziyarət edən istifadəçilərin fərdi məlumatlarının məxfiliyini qorumağa zəmanət veririk.",
+    "sectionHeading": "Məlumatların toplanması və istifadəsi",
+    "sectionIntro": "Vebsaytdakı müraciət formalarını doldurduğunuz zaman təqdim etdiyiniz ad, soyad, telefon və e-poçt məlumatları, həmçinin avtomatik kuki (cookie) göstəriciləri toplanır.",
+    "purposeIntro": "Bu məlumatlar yalnız aşağıdakı məqsədlər üçün istifadə olunur:",
+    "bullets": [
+      "1. BRABUS Island Baku rezidensiyaları, tvin villalar, mənzil planları, qiymət və eksklüziv satış şərtləri haqqında sizi məlumatlandırmaq;",
+      "2. Sorğularınıza cavab vermək və layihə üzrə konsultasiya təmin etmək üçün sizinlə əlaqə saxlamaq;",
+      "3. Vebsaytın fəaliyyətini və istifadəçi təcrübəsini təkmilləşdirmək."
+    ],
+    "closing": "Fərdi məlumatlarınız heç bir halda üçüncü şəxslərə satılmır və icarəyə verilmir."
   }
 }

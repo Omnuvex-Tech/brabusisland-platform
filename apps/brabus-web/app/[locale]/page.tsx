@@ -1,5 +1,6 @@
 import { notFound } from 'next/navigation';
-import { isValidLocale } from '@/lib/i18n';
+import { isValidLocale, type Locale } from '@/lib/i18n';
+import { getHomeSchema } from '@/lib/structured-data';
 import { Hero } from './components/Hero/hero-wrapper';
 import { About } from './components/About/about-wrapper';
 import { Exterior } from './components/Exterior/exterior-wrapper';
@@ -23,8 +24,14 @@ export default async function Home({
     notFound();
   }
 
+ const structuredData = getHomeSchema(locale as Locale);
+
   return (
     <>
+     <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       <Hero locale={locale} />
       <About locale={locale} />
       <Exterior locale={locale} />

@@ -2,9 +2,6 @@
 @import "@repo/ui/styles";
 @source "../../../packages/ui/src/**/*.{ts,tsx}";
 
-/* DIN Pro — bunu `globals.css`-in başına əlavə et.
-   Fayllar `public/fonts/` altında olmalıdır (yəni `/fonts/dinpro.otf` kimi
-   brauzerdən əlçatan olsun). Qovluğun yolu fərqlidirsə, url()-ləri uyğunlaşdır. */
 
 @font-face {
   font-family: 'DIN Pro';
@@ -86,7 +83,6 @@
   font-display: swap;
 }
 
-/* Condensed variant — ayrı font-family adı, lazım olsa istifadə et */
 
 @font-face {
   font-family: 'DIN Pro Condensed';
@@ -158,4 +154,10 @@
   font-weight: 900;
   font-style: italic;
   font-display: swap;
+}
+
+
+
+html {
+  scroll-behavior: smooth;
 }

@@ -37,4 +37,6 @@ export { FooterUI as Footer } from './components/Footer/FooterUI'
 export { ContactUI as Contact } from './components/Contact/ContactUI';
 export type { ContactInfoItem, CountryCode } from './components/Contact/ContactUI';
 
+export { PrivacyPolicyUI as PrivacyPolicy } from './components/PrivacyPolicy/PrivacyPolicyUI';
+
 export { cn } from "./lib/utils";

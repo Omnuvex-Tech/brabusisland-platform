@@ -341,5 +341,18 @@
     },
     "mapAlt": "Brabus Island Baku location on the map",
     "mapButton": "See on the map"
+  },
+   "privacyPolicy": {
+    "title": "Privacy Policy",
+    "intro": "We guarantee the confidentiality of personal data of users visiting our website.",
+    "sectionHeading": "Data Collection and Use",
+    "sectionIntro": "When you fill out the contact forms on the website, the provided name, surname, phone number, and email address, as well as automatic cookie indicators, are collected.",
+    "purposeIntro": "This data is used solely for the following purposes:",
+    "bullets": [
+      "1. Informing you about BRABUS Island Baku residences, twin villas, layout plans, pricing, and exclusive sales terms;",
+      "2. Contacting you to respond to your inquiries and provide consultation on the project;",
+      "3. Enhancing website functionality and user experience."
+    ],
+    "closing": "Your personal data is under no circumstances sold or rented to third parties."
   }
 }
