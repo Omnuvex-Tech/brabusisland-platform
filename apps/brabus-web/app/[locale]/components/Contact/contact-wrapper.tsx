@@ -58,6 +58,9 @@ export function Contact({ locale }: { locale: string }) {
       mapImageAlt={c.mapAlt}
       mapButtonLabel={c.mapButton}
       mapButtonHref="https://maps.google.com"
+      successText={c.success}
+      errorText={c.error}
+      phoneMinError={c.phoneMinError}
     />
   );
 }

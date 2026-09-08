@@ -324,12 +324,14 @@
       }
     ]
   },
-    "contact": {
+  "contact": {
     "heading": "Əlaqə",
     "email": "info@treva.realestate",
     "address": "Ziya Yusifzadə 10, Sabah Residence / Sea Breeze Sales Office",
     "phone": "+994 50 277 2662 / *2662",
     "phoneHref": "+994502772662",
+    "success": "Mesajınız uğurla göndərildi. Tezliklə sizinlə əlaqə saxlanılacaq.",
+    "error": "Xəta baş verdi, yenidən cəhd edin.",
     "form": {
       "title": "BİZİMLƏ ƏLAQƏ. SORĞU GÖNDƏRİN.",
       "name": "Ad *",
@@ -340,7 +342,8 @@
       "consent": "Məlumatları göndərməklə fərdi məlumatlarınızın GDPR qaydalarına uyğun işlənməsinə və layihənin rəsmi satış platforması olan Treva Real Estate satış komandasına ötürülməsinə razılıq verirsiniz. BRABUS layihənin brend tərəfdaşıdır; hüquqi, tikinti və kommersiya öhdəlikləri tərtibatçı tərəfə məxsusdur."
     },
     "mapAlt": "Brabus Island Baku xəritədə yerləşməsi",
-    "mapButton": "Xəritədə bax"
+    "mapButton": "Xəritədə bax",
+    "phoneMinError": "Telefon nömrəsi ən azı 3 rəqəmdən ibarət olmalıdır"
   },
   "privacyPolicy": {
     "title": "Məxfilik siyasəti",
@@ -354,5 +357,66 @@
       "3. Vebsaytın fəaliyyətini və istifadəçi təcrübəsini təkmilləşdirmək."
     ],
     "closing": "Fərdi məlumatlarınız heç bir halda üçüncü şəxslərə satılmır və icarəyə verilmir."
+  },
+  "terms": {
+    "title": "İstifadəçi Razılaşması",
+    "sections": [
+      {
+        "number": 1,
+        "heading": "Ümumi Müddəalar",
+        "paragraphs": [
+          "Bu İstifadəçi Razılaşması, BRABUS Island Baku vebsaytından istifadə qaydalarını və şərtlərini müəyyən edir. Vebsayta daxil olmaqla, resurslardan və ya müraciət formalarından istifadə etməklə siz bu Razılaşmanın bütün şərtlərini qəbul etmiş sayılırsınız."
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "Tərəflərin Hüquq və Öhdəlikləri",
+        "items": [
+          {
+            "label": "Məlumatların Dəqiqliyi",
+            "text": "İstifadəçi müraciət formalarını doldurarkən təqdim etdiyi ad, soyad, əlaqə nömrəsi və e-poçt məlumatlarının doğru və aktual olmasına məsuldur."
+          },
+          {
+            "label": "Məqsədli İstifadə",
+            "text": "İstifadəçi Vebsaytdan yalnız şəxsi, qeyri-kommersiya məqsədilə və qanunvericiliyə uyğun şəkildə istifadə etməyi öhdəsinə götürür. Vebsaytın fəaliyyətinə texniki müdaxilə etmək və ya təhlükəsizlik sistemlərini pozmaq qadağandır."
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "Əqli Mülkiyyət Hüquqları",
+        "paragraphs": [
+          "Vebsaytda yerləşdirilən bütün vizual materiallar, memarlıq konseptləri, mətnlər, dizayn elementləri, brend simvolları və rəqəmsal modellər əqli mülkiyyət obyekti hesab olunur. Tərtibatçının və ya hüquq sahiblərinin yazılı icazəsi olmadan bu materialların köçürülməsi, tirajlanması, dəyişdirilməsi və ya kommersiya məqsədilə istifadəsi qadağandır."
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "Məsuliyyətin Məhdudlaşdırılması",
+        "items": [
+          {
+            "label": "Vizuallar və İcra Statusu",
+            "text": "Vebsaytda nümayiş olunan eksteryer və interyer görüntüləri rəqəmsal memarlıq modelləridir. Cari tikinti və icra statusu tərtibatçı tərəfindən mütəmadi olaraq yenilənir və dəyişdirilə bilər."
+          },
+          {
+            "label": "Məlumat Xarakteri",
+            "text": "Vebsaytda təqdim olunan mənzil planları, sahə ölçüləri və digər texniki göstəricilər öncədən xəbərdarlıq edilmədən dəqiqləşdirilə bilər və birbaşa müqavilə öhdəliyi yaratmır."
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "Brend Tərəfdaşlığı və Hüquqi Status",
+        "paragraphs": [
+          "BRABUS layihənin eksklüziv brend tərəfdaşıdır. Layihə üzrə hüquqi, tikinti, podrat və kommersiya öhdəlikləri tərtibatçı tərəfə (Sabah Investment Group) və onun rəsmi nümayəndələrinə məxsusdur. Layihənin rəsmi satışı Treva Real Estate platforması tərəfindən həyata keçirilir."
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "Yekun Müddəalar",
+        "paragraphs": [
+          "Vebsayt rəhbərliyi bu Razılaşmanın şərtlərini istənilən vaxt birtərəfli qaydada dəyişdirmək hüququnu özündə saxlayır. Yenilənmiş şərtlər Vebsaytda dərc edildiyi andan qüvvəyə minir."
+        ]
+      }
+    ]
   }
 }

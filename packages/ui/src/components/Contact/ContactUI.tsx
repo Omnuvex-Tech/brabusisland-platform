@@ -34,6 +34,35 @@ interface ContactUIProps {
   mapImageAlt: string;
   mapButtonLabel: string;
   mapButtonHref: string;
+  successText: string;
+  errorText: string;
+  phoneMinError: string;
+}
+
+const MIN_PHONE_DIGITS = 3;
+const MAX_PHONE_DIGITS = 15;
+
+function countDigits(value: string): number {
+  return (value.match(/\d/g) || []).length;
+}
+
+// Yalnız rəqəm, "-" və "()" saxlanılır — hərf və digər simvollar atılır.
+// Rəqəm sayı 15-i keçəndə əlavə rəqəmlər qəbul olunmur (formatlayıcı simvollar qalır).
+function sanitizePhoneInput(value: string): string {
+  const cleaned = value.replace(/[^0-9()\-]/g, '');
+  if (countDigits(cleaned) <= MAX_PHONE_DIGITS) {
+    return cleaned;
+  }
+  let result = '';
+  let digits = 0;
+  for (const char of cleaned) {
+    if (/\d/.test(char)) {
+      if (digits >= MAX_PHONE_DIGITS) continue;
+      digits++;
+    }
+    result += char;
+  }
+  return result;
 }
 
 const fadeInUp: Variants = {
@@ -64,6 +93,8 @@ const infoItemVariants: Variants = {
   }
 };
 
+type SubmitStatus = 'idle' | 'loading' | 'success' | 'error';
+
 export function ContactUI({
   heading,
   infoItems,
@@ -81,10 +112,20 @@ export function ContactUI({
   mapImageAlt,
   mapButtonLabel,
   mapButtonHref,
+  successText,
+  errorText,
+  phoneMinError,
 }: ContactUIProps) {
   const [isCountryOpen, setIsCountryOpen] = useState(false);
   const [selectedIso, setSelectedIso] = useState(defaultCountryIso);
   const countryRef = useRef<HTMLDivElement>(null);
+
+  const [nameValue, setNameValue] = useState('');
+  const [surnameValue, setSurnameValue] = useState('');
+  const [messageValue, setMessageValue] = useState('');
+  const [phoneValue, setPhoneValue] = useState('');
+  const [phoneError, setPhoneError] = useState('');
+  const [submitStatus, setSubmitStatus] = useState<SubmitStatus>('idle');
 
   const selectedCountry =
     countryCodes.find((c) => c.iso === selectedIso) ?? countryCodes[0];
@@ -99,8 +140,57 @@ export function ContactUI({
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
+  const handlePhoneChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const cleaned = sanitizePhoneInput(e.target.value);
+    setPhoneValue(cleaned);
+    if (phoneError) setPhoneError('');
+  };
+
+  const handlePhoneBlur = () => {
+    if (phoneValue.length === 0) {
+      setPhoneError('');
+      return;
+    }
+    setPhoneError(countDigits(phoneValue) < MIN_PHONE_DIGITS ? phoneMinError : '');
+  };
+
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
+    if (countDigits(phoneValue) < MIN_PHONE_DIGITS) {
+      setPhoneError(phoneMinError);
+      return;
+    }
+
+    setSubmitStatus('loading');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          name: nameValue,
+          surname: surnameValue,
+          phone: `${selectedCountry?.dialCode ?? ''}${phoneValue}`,
+          message: messageValue,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok || !data.success) {
+        setSubmitStatus('error');
+        return;
+      }
+
+      setSubmitStatus('success');
+      setNameValue('');
+      setSurnameValue('');
+      setMessageValue('');
+      setPhoneValue('');
+    } catch {
+      setSubmitStatus('error');
+    }
   };
 
   return (
@@ -171,6 +261,8 @@ export function ContactUI({
                 required
                 placeholder={namePlaceholder}
                 className={styles.formInput}
+                value={nameValue}
+                onChange={(e) => setNameValue(e.target.value)}
               />
             </div>
 
@@ -181,6 +273,8 @@ export function ContactUI({
                 required
                 placeholder={surnamePlaceholder}
                 className={styles.formInput}
+                value={surnameValue}
+                onChange={(e) => setSurnameValue(e.target.value)}
               />
             </div>
 
@@ -191,6 +285,8 @@ export function ContactUI({
                 required
                 placeholder={messagePlaceholder}
                 className={styles.formInput}
+                value={messageValue}
+                onChange={(e) => setMessageValue(e.target.value)}
               />
             </div>
 
@@ -240,19 +336,39 @@ export function ContactUI({
                   )}
                 </div>
                 <span className={styles.phoneDivider} />
-                <input
-                  type="tel"
-                  name="number"
-                  required
-                  placeholder={numberPlaceholder}
-                  className={styles.formInput}
-                />
+                <div className={styles.fieldNumber}>
+                  <input
+                    type="tel"
+                    name="number"
+                    required
+                    placeholder={numberPlaceholder}
+                    className={`${styles.formInput} ${phoneError ? styles.inputError : ''}`}
+                    value={phoneValue}
+                    onChange={handlePhoneChange}
+                    onBlur={handlePhoneBlur}
+                    inputMode="numeric"
+                    aria-invalid={!!phoneError}
+                    aria-describedby={phoneError ? 'phone-error' : undefined}
+                  />
+                  {phoneError && (
+                    <span id="phone-error" className={styles.errorText}>
+                      {phoneError}
+                    </span>
+                  )}
+                </div>
               </div>
 
-              <button type="submit" className={styles.sendButton}>
-                {sendLabel}
+              <button type="submit" className={styles.sendButton} disabled={submitStatus === 'loading'}>
+                {submitStatus === 'loading' ? '...' : sendLabel}
               </button>
             </div>
+
+            {submitStatus === 'success' && (
+              <p className={styles.statusSuccess}>{successText}</p>
+            )}
+            {submitStatus === 'error' && (
+              <p className={styles.statusError}>{errorText}</p>
+            )}
 
             <p className={styles.consentText}>{consentText}</p>
           </form>

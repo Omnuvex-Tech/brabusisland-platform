@@ -300,6 +300,34 @@
     color: white;
 }
 
+.fieldNumber {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    min-width: 0;
+}
+
+.inputError {
+    color: #e40623 !important;
+}
+
+.errorText {
+    margin: 0;
+    color: #e40623;
+    font-family: 'DIN Pro', sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+.statusSuccess {
+    color: #4caf50; 
+}
+.statusError {
+    color: #e40623;  
+}
+
+
 @media (max-width: 1200px) {
     .topRow {
         padding: 80px 40px 48px;

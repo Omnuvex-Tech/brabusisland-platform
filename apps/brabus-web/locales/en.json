@@ -330,6 +330,7 @@
     "address": "10 Ziya Yusifzade, Sabah Residence / Sea Breeze Sales Office",
     "phone": "+994 50 277 2662 / *2662",
     "phoneHref": "+994502772662",
+    "phoneMinError": "Phone number must contain at least 3 digits",
     "form": {
       "title": "CONTACT US. SUBMIT A REQUEST.",
       "name": "Name *",
@@ -340,8 +341,9 @@
       "consent": "By submitting your information, you consent to the processing of your personal data in accordance with GDPR regulations and its transfer to the sales team of Treva Real Estate, the official sales platform for the project. BRABUS is a branding partner of the project; all legal, construction, and commercial obligations belong to the developer."
     },
     "mapAlt": "Brabus Island Baku location on the map",
-    "mapButton": "See on the map"
-  },
+    "mapButton": "See on the map",
+    "success": "Your message has been sent successfully. We will contact you shortly.",
+"error": "Something went wrong, please try again."  },
    "privacyPolicy": {
     "title": "Privacy Policy",
     "intro": "We guarantee the confidentiality of personal data of users visiting our website.",
@@ -354,5 +356,66 @@
       "3. Enhancing website functionality and user experience."
     ],
     "closing": "Your personal data is under no circumstances sold or rented to third parties."
+  },
+   "terms": {
+    "title": "User Agreement",
+    "sections": [
+      {
+        "number": 1,
+        "heading": "General Provisions",
+        "paragraphs": [
+          "This User Agreement sets forth the terms and conditions for using the BRABUS Island Baku website. By accessing the website, utilizing its resources, or submitting contact forms, you agree to be bound by all terms of this Agreement."
+        ]
+      },
+      {
+        "number": 2,
+        "heading": "Rights and Obligations of the Parties",
+        "items": [
+          {
+            "label": "Accuracy of Information",
+            "text": "The user is responsible for ensuring that the name, surname, contact number, and email address provided when filling out contact forms are accurate and up to date."
+          },
+          {
+            "label": "Permitted Use",
+            "text": "The user agrees to use the website solely for personal, non-commercial purposes in compliance with applicable laws. Technical interference with the website's operation or breaching its security systems is strictly prohibited."
+          }
+        ]
+      },
+      {
+        "number": 3,
+        "heading": "Intellectual Property Rights",
+        "paragraphs": [
+          "All visual materials, architectural concepts, texts, design elements, brand symbols, and digital models featured on the website are protected intellectual property. Copying, reproducing, modifying, or using these materials for commercial purposes without the prior written consent of the developer or rights holders is prohibited."
+        ]
+      },
+      {
+        "number": 4,
+        "heading": "Limitation of Liability",
+        "items": [
+          {
+            "label": "Visuals and Implementation Status",
+            "text": "Exterior and interior images displayed on the website are digital architectural renderings. The current construction and execution status is regularly updated and subject to change by the developer."
+          },
+          {
+            "label": "Informational Nature",
+            "text": "Layout plans, unit sizes, and other technical specifications presented on the website are subject to refinement without prior notice and do not constitute a direct contractual obligation."
+          }
+        ]
+      },
+      {
+        "number": 5,
+        "heading": "Brand Partnership and Legal Status",
+        "paragraphs": [
+          "BRABUS is the exclusive brand partner of the project. Legal, construction, contracting, and commercial obligations regarding the project belong to the developer (Sabah Investment Group) and its official representatives. Official sales of the project are conducted through the Treva Real Estate platform."
+        ]
+      },
+      {
+        "number": 6,
+        "heading": "Final Provisions",
+        "paragraphs": [
+          "The website administration reserves the right to unilaterally modify the terms of this Agreement at any time. The updated terms become effective immediately upon being published on the website."
+        ]
+      }
+    ]
   }
 }

@@ -9,7 +9,7 @@ export function Consultation({ locale }: { locale: string }) {
       imageSrc="/images/consultation.jpg"
       imageAlt={t.consultation.buttonText}
       buttonText={t.consultation.buttonText}
-      href="#contacts"
+      href="#contact"
     />
   );
 }

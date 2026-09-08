@@ -9,7 +9,7 @@ export function Cta({ locale }: { locale: string }) {
       imageSrc="/images/cta.jpg"
       imageAlt={t.cta.buttonText}
       buttonText={t.cta.buttonText}
-      href="#contacts"
+      href="#contact"
     />
   );
 }

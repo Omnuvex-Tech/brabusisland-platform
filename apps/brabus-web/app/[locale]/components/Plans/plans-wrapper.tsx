@@ -4,13 +4,13 @@ import { getPriceListHref } from '@/lib/priceList';
 
 
 const IMAGES: Record<string, string> = {
-  'studio-a3': '/images/plans-1.png',
-  '1-yataq-a1': '/images/plans-2.png',
-  '2-yataq-a': '/images/plans-3.png',
-  '3-yataq-a': '/images/plans-4.png',
-  'dupleks-a5': '/images/plans-5.png',
-  'dupleks-a7': '/images/plans-6.png',
-  villa: '/images/plans-7.png',
+  'studio-a3': '/images/studio.jpeg',
+  '1-yataq-a1': '/images/1bedroom.jpeg',
+  '2-yataq-a': '/images/2bedroom.jpeg',
+  '3-yataq-a': '/images/3bedroom.jpeg',
+  'dupleks-a5': '/images/dublex-typea5.jpeg',
+  'dupleks-a7': '/images/dublex-typea7.jpeg',
+  'villa': '/images/villa.jpeg',
 };
 
 

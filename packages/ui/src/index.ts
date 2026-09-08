@@ -39,4 +39,6 @@ export type { ContactInfoItem, CountryCode } from './components/Contact/ContactU
 
 export { PrivacyPolicyUI as PrivacyPolicy } from './components/PrivacyPolicy/PrivacyPolicyUI';
 
+export { TermsUI as Terms } from './components/Terms/TermsUI';
+
 export { cn } from "./lib/utils";
