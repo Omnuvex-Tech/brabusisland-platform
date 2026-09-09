@@ -1,10 +1,11 @@
 'use client';
 
 import { Footer as FooterUI } from '@repo/ui';
-import { getDictionary } from '@/lib/i18n';
+import { getDictionary, Locale } from '@/lib/i18n';
 import { useRouter } from 'next/navigation';
 import { getPriceListHref } from '@/lib/priceList';
 import { getBrokersHref } from '@/lib/brokers';
+import { localizedPath } from '@/lib/localized-path';
 
 const LOCALES = ['az', 'en', 'ru'];
 
@@ -38,9 +39,9 @@ export function Footer({ locale }: { locale: string }) {
       activeLocale={locale}
       onLocaleChange={handleLocaleChange}
       privacyLabel={t.footer.privacy}
-      privacyHref="/privacy-policy"
       termsLabel={t.footer.terms}
-      termsHref="/terms"
+privacyHref={localizedPath('/privacy-policy', locale as Locale)}
+termsHref={localizedPath('/terms', locale as Locale)}
       copyrightText={t.footer.copyright}
     />
   );

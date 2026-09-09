@@ -7,7 +7,7 @@ import { QueryProvider } from './providers';
 import { Navbar } from './components/Navbar/navbar-wrapper';
 import { Footer } from './components/Footer/footer-wrapper';
 import { isValidLocale, LOCALES } from '@/lib/i18n';
-import { config } from '@/config';
+import { getSeo } from '@/config/project';
 import '../globals.css';
 
 const inter = localFont({
@@ -23,11 +23,20 @@ export function generateStaticParams() {
   return LOCALES.map((locale) => ({ locale }));
 }
 
-export const metadata: Metadata = {
-  title: config.project.projectName,
-  description: config.project.projectDescription,
-  keywords: [...config.project.keywords],
-};
+export async function generateMetadata({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}): Promise<Metadata> {
+  const { locale } = await params;
+  const seo = getSeo(locale);
+
+  return {
+    title: seo.title,
+    description: seo.description,
+    keywords: seo.keywords,
+  };
+}
 
 export default async function LocaleLayout({
   children,
