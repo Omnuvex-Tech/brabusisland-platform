@@ -88,17 +88,11 @@
             "label": "Total area:",
             "value": "520.43 sq.ft | 48.35 sq.m"
           }
-        ],
-        "rooms": [
-          "Bedroom: 4.25 x 3.80 m",
-          "Kitchen + dining area: 3.05 x 2.30 m",
-          "Bathroom: 1.60 x 2.20 m",
-          "Balcony (size varies)"
         ]
       },
       {
         "id": "1-yataq-a1",
-        "tabLabel": "1 BEDROOM\nType A1",
+        "tabLabel": "1 BEDROOM",
         "imageAlt": "1 Bedroom Type A1 floor plan",
         "meta": [
           {
@@ -117,19 +111,11 @@
             "label": "Total area:",
             "value": "979.94 sq.ft | 91.04 sq.m"
           }
-        ],
-        "rooms": [
-          "Living room + kitchen: 9.65 x 3.60",
-          "Bedroom: 3.65 x 4.05",
-          "Walk-in closet: 2.10 x 3.50",
-          "Main bathroom: 2.80 x 3.50",
-          "Guest bathroom: 1.70 x 1.45",
-          "Balcony (size varies)"
         ]
       },
       {
         "id": "2-yataq-a",
-        "tabLabel": "2 BEDROOM\nType A",
+        "tabLabel": "2 BEDROOM",
         "imageAlt": "2 Bedroom Type A floor plan",
         "meta": [
           {
@@ -148,21 +134,11 @@
             "label": "Total area:",
             "value": "1558.61 sq.ft | 144.80 sq.m"
           }
-        ],
-        "rooms": [
-          "Living room: 3.70 x 4.75",
-          "Kitchen + dining area: 5.10 x 2.95",
-          "Bedroom 1: 5.30 x 4.50",
-          "Bathroom: 3.65 x 2.05",
-          "Bedroom 2: 4.90 x 3.65",
-          "Bathroom: 2.75 x 1.70",
-          "Guest bathroom: 1.60 x 1.75",
-          "Balcony (size varies)"
         ]
       },
       {
         "id": "3-yataq-a",
-        "tabLabel": "3 BEDROOM\nType A",
+        "tabLabel": "3 BEDROOM",
         "imageAlt": "3 Bedroom Type A floor plan",
         "meta": [
           {
@@ -181,25 +157,11 @@
             "label": "Total area:",
             "value": "3313.56 sq.ft | 307.84 sq.m"
           }
-        ],
-        "rooms": [
-          "Living + dining room: 11.70 x 5.90",
-          "Kitchen: 7.20 x 2.50",
-          "Bedroom 1: 7.80 x 3.10",
-          "Walk-in closet: 3.45 x 2.65",
-          "Bathroom: 5.60 x 2.60",
-          "Bedroom 2: 4.00 x 3.50",
-          "Walk-in closet: 2.25 x 2.00",
-          "Bathroom: 2.95 x 2.25",
-          "Bedroom 3: 4.70 x 3.50",
-          "Bathroom: 4.10 x 1.95",
-          "Guest bathroom: 1.70 x 1.70",
-          "Balcony (size varies)"
         ]
       },
       {
         "id": "dupleks-a5",
-        "tabLabel": "Duplex Type A5",
+        "tabLabel": "Duplex",
         "imageAlt": "Duplex Type A5 floor plan",
         "meta": [
           {
@@ -218,63 +180,9 @@
             "label": "Total area:",
             "value": "2313.48 sq.ft | 214.93 sq.m"
           }
-        ],
-        "rooms": [
-          "1st floor:",
-          "Living + dining room: 5.30 x 3.60",
-          "Kitchen: 2.40 x 2.40",
-          "Guest bathroom: 1.60 x 1.80",
-          "Private garden (size varies)",
-          "2nd floor:",
-          "Bedroom 1: 3.10 x 4.00",
-          "Bathroom: 2.90 x 2.50",
-          "Walk-in closet: 1.90 x 3.80",
-          "Bedroom 2: 3.15 x 4.00",
-          "Bathroom: 4.15 x 3.20",
-          "Balcony (size varies)"
         ]
       },
-      {
-        "id": "dupleks-a7",
-        "tabLabel": "Duplex Type A7",
-        "imageAlt": "Duplex Type A7 floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Available on floors 1 & 2"
-          },
-          {
-            "label": "Internal area",
-            "value": "2019.98 sq.ft | 187.663 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "929.67 sq.ft | 86.37 sq.m"
-          },
-          {
-            "label": "Total area:",
-            "value": "2949.66 sq.ft | 274.033 sq.m"
-          }
-        ],
-        "rooms": [
-          "1st floor:",
-          "Living + dining room: 3.75 x 6.00",
-          "Kitchen: 2.40 x 4.35",
-          "Bedroom: 3.45 x 5.35",
-          "Bathroom: 1.75 x 3.00",
-          "Walk-in closet: 1.70 x 3.10",
-          "Guest bathroom: 1.60 x 1.60",
-          "Private garden (size varies)",
-          "2nd floor:",
-          "Bedroom 1: 3.15 x 5.55",
-          "Bathroom: 2.85 x 2.05",
-          "Walk-in closet: 1.75 x 5.55",
-          "Bedroom 2: 4.00 x 5.75",
-          "Bathroom: 4.15 x 2.00",
-          "Walk-in closet: 2.35 x 3.50",
-          "Balcony (size varies)"
-        ]
-      },
+   
       {
         "id": "villa",
         "tabLabel": "VILLA",
@@ -292,34 +200,6 @@
             "label": "Total area:",
             "value": "4762.70 sq.ft | 442.47 sq.m"
           }
-        ],
-        "rooms": [
-          "Ground floor:",
-          "Living + dining room: 7.70 x 5.45",
-          "Kitchen: 2.85 x 3.65",
-          "Staff room: 1.35 x 2.45",
-          "Staff bathroom: 1.55 x 1.45",
-          "Guest bathroom: 3.05 x 1.20",
-          "Garage: 3.40 x 6.05",
-          "1st floor:",
-          "Bedroom 1: 3.90 x 5.00",
-          "Bathroom: 2.65 x 1.70",
-          "Walk-in closet: 2.85 x 1.00",
-          "Bedroom 2: 3.75 x 5.00",
-          "Bathroom: 2.55 x 1.70",
-          "Walk-in closet: 2.75 x 1.00",
-          "Bedroom 3: 3.85 x 3.85",
-          "Bathroom: 2.65 x 1.70",
-          "Walk-in closet: 2.85 x 1.00",
-          "Bedroom 4: 3.75 x 3.85",
-          "Bathroom: 2.55 x 1.70",
-          "Walk-in closet: 2.75 x 1.50",
-          "Balcony (size varies)",
-          "2nd floor:",
-          "Bedroom: 4.80 x 4.05",
-          "Bathroom: 2.75 x 6.20",
-          "Walk-in closet: 5.20 x 2.30",
-          "Utility room: 7.65 x 2.80"
         ]
       }
     ]

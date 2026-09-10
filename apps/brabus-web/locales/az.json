@@ -69,7 +69,7 @@
     "units": [
       {
         "id": "studio-a3",
-        "tabLabel": "STUDİO Tip A3",
+        "tabLabel": "STUDİO",
         "imageAlt": "STUDİO Tip A3 mənzil planı",
         "meta": [
           {
@@ -88,17 +88,11 @@
             "label": "Ümumi Sahə:",
             "value": "520.43 kv.fut | 48.35 kv.m"
           }
-        ],
-        "rooms": [
-          "Yataq otağı: 4.25 x 3.80 m",
-          "Mətbəx + Yemək zonası: 3.05 x 2.30 m",
-          "Sanitar qovşağı: 1.60 x 2.20 m",
-          "Eyvan (Ölçüsü dəyişir)"
         ]
       },
       {
         "id": "1-yataq-a1",
-        "tabLabel": "1 YATAQ OTAQLI\nTip A1",
+        "tabLabel": "1 YATAQ OTAQLI",
         "imageAlt": "1 Yataq otaqlı Tip A1 mənzil planı",
         "meta": [
           {
@@ -117,19 +111,11 @@
             "label": "Ümumi Sahə:",
             "value": "979.94 kv.fut | 91.04 kv.m"
           }
-        ],
-        "rooms": [
-          "Qonaq otağı + Mətbəx: 9.65 x 3.60",
-          "Yataq otağı: 3.65 x 4.05",
-          "Qarderob otağı: 2.10 x 3.50",
-          "Əsas sanitar qovşağı: 2.80 x 3.50",
-          "Qonaq sanitar qovşağı: 1.70 x 1.45",
-          "Eyvan (Ölçüsü dəyişir)"
         ]
       },
       {
         "id": "2-yataq-a",
-        "tabLabel": "2 YATAQ OTAQLI\nTip A",
+        "tabLabel": "2 YATAQ OTAQLI",
         "imageAlt": "2 Yataq otaqlı Tip A mənzil planı",
         "meta": [
           {
@@ -148,21 +134,11 @@
             "label": "Ümumi Sahə:",
             "value": "1558.61 kv.fut | 144.80 kv.m"
           }
-        ],
-        "rooms": [
-          "Qonaq otağı: 3.70 x 4.75",
-          "Mətbəx + Yemək zonası: 5.10 x 2.95",
-          "1-ci Yataq otağı: 5.30 x 4.50",
-          "Sanitar qovşağı: 3.65 x 2.05",
-          "2-ci Yataq otağı: 4.90 x 3.65",
-          "Sanitar qovşağı: 2.75 x 1.70",
-          "Qonaq sanitar qovşağı: 1.60 x 1.75",
-          "Eyvan (Ölçüsü dəyişir)"
         ]
       },
       {
         "id": "3-yataq-a",
-        "tabLabel": "3 YATAQ OTAQLI\nTip A",
+        "tabLabel": "3 YATAQ OTAQLI",
         "imageAlt": "3 Yataq otaqlı Tip A mənzil planı",
         "meta": [
           {
@@ -181,25 +157,11 @@
             "label": "Ümumi Sahə:",
             "value": "3313.56 kv.fut | 307.84 kv.m"
           }
-        ],
-        "rooms": [
-          "Qonaq + Yemək otağı: 11.70 x 5.90",
-          "Mətbəx: 7.20 x 2.50",
-          "1-ci Yataq otağı: 7.80 x 3.10",
-          "Qarderob: 3.45 x 2.65",
-          "Sanitar qovşağı: 5.60 x 2.60",
-          "2-ci Yataq otağı: 4.00 x 3.50",
-          "Qarderob: 2.25 x 2.00",
-          "Sanitar qovşağı: 2.95 x 2.25",
-          "3-cü Yataq otağı: 4.70 x 3.50",
-          "Sanitar qovşağı: 4.10 x 1.95",
-          "Qonaq sanitar qovşağı: 1.70 x 1.70",
-          "Eyvan (Ölçüsü dəyişir)"
         ]
       },
       {
         "id": "dupleks-a5",
-        "tabLabel": "Dupleks Tip A5",
+        "tabLabel": "Dupleks",
         "imageAlt": "Dupleks Tip A5 mənzil planı",
         "meta": [
           {
@@ -218,63 +180,9 @@
             "label": "Ümumi Sahə:",
             "value": "2313.48 kv.fut | 214.93 kv.m"
           }
-        ],
-        "rooms": [
-          "1-ci Mərtəbə:",
-          "Qonaq + Yemək otağı: 5.30 x 3.60",
-          "Mətbəx: 2.40 x 2.40",
-          "Qonaq sanitar qovşağı: 1.60 x 1.80",
-          "Özəl Bağ (Sahəsi dəyişir)",
-          "2-ci Mərtəbə:",
-          "1-ci Yataq otağı: 3.10 x 4.00",
-          "Sanitar qovşağı: 2.90 x 2.50",
-          "Qarderob: 1.90 x 3.80",
-          "2-ci Yataq otağı: 3.15 x 4.00",
-          "Sanitar qovşağı: 4.15 x 3.20",
-          "Eyvan (Ölçüsü dəyişir)"
         ]
       },
-      {
-        "id": "dupleks-a7",
-        "tabLabel": "Dupleks Tip A7",
-        "imageAlt": "Dupleks Tip A7 mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "1-ci və 2-ci mərtəbələrdə mövcuddur"
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "2019.98 kv.fut | 187.663 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "929.67 kv.fut | 86.37 kv.m"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "2949.66 kv.fut | 274.033 kv.m"
-          }
-        ],
-        "rooms": [
-          "1-ci Mərtəbə:",
-          "Qonaq + Yemək otağı: 3.75 x 6.00",
-          "Mətbəx: 2.40 x 4.35",
-          "Yataq otağı: 3.45 x 5.35",
-          "Sanitar qovşağı: 1.75 x 3.00",
-          "Qarderob: 1.70 x 3.10",
-          "Qonaq sanitar qovşağı: 1.60 x 1.60",
-          "Özəl Bağ (Sahəsi dəyişir)",
-          "2-ci Mərtəbə:",
-          "1-ci Yataq otağı: 3.15 x 5.55",
-          "Sanitar qovşağı: 2.85 x 2.05",
-          "Qarderob: 1.75 x 5.55",
-          "2-ci Yataq otağı: 4.00 x 5.75",
-          "Sanitar qovşağı: 4.15 x 2.00",
-          "Qarderob: 2.35 x 3.50",
-          "Eyvan (Ölçüsü dəyişir)"
-        ]
-      },
+    
       {
         "id": "villa",
         "tabLabel": "VİLLA",
@@ -292,34 +200,6 @@
             "label": "Ümumi Sahə:",
             "value": "4762.70 kv.fut | 442.47 kv.m"
           }
-        ],
-        "rooms": [
-          "Zəmin Mərtəbə:",
-          "Qonaq + Yemək otağı: 7.70 x 5.45",
-          "Mətbəx: 2.85 x 3.65",
-          "Xidmətçi otağı: 1.35 x 2.45",
-          "Xidmətçi sanitar qovşağı: 1.55 x 1.45",
-          "Qonaq sanitar qovşağı: 3.05 x 1.20",
-          "Qaraj: 3.40 x 6.05",
-          "1-ci Mərtəbə:",
-          "1-ci Yataq otağı: 3.90 x 5.00",
-          "Sanitar qovşağı: 2.65 x 1.70",
-          "Qarderob: 2.85 x 1.00",
-          "2-ci Yataq otağı: 3.75 x 5.00",
-          "Sanitar qovşağı: 2.55 x 1.70",
-          "Qarderob: 2.75 x 1.00",
-          "3-cü Yataq otağı: 3.85 x 3.85",
-          "Sanitar qovşağı: 2.65 x 1.70",
-          "Qarderob: 2.85 x 1.00",
-          "4-cü Yataq otağı: 3.75 x 3.85",
-          "Sanitar qovşağı: 2.55 x 1.70",
-          "Qarderob: 2.75 x 1.50",
-          "Eyvan (Ölçüsü dəyişir)",
-          "2-ci Mərtəbə:",
-          "Yataq Otağı: 4.80 x 4.05",
-          "Sanitar qovşağı: 2.75 x 6.20",
-          "Qarderob: 5.20 x 2.30",
-          "Texniki otaq: 7.65 x 2.80"
         ]
       }
     ]

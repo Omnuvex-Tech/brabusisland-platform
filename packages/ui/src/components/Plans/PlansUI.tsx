@@ -17,7 +17,6 @@ export interface PlanUnit {
   imageSrc: string;
   imageAlt: string;
   meta: PlanMetaRow[];
-  rooms: string[];
 }
 
 interface PlansUIProps {
@@ -60,8 +59,7 @@ export function PlansUI({ title, buttonLabel, buttonHref, units, iconBasePath }:
   }
 
   return (
-    <section id="plans" className={styles.section} style={{ overflow: 'hidden' }}>
-      {/* Header animasiyası */}
+    <section id="plans" className={styles.section}>
       <motion.div
         className={styles.header}
         initial="hidden"
@@ -135,23 +133,7 @@ export function PlansUI({ title, buttonLabel, buttonHref, units, iconBasePath }:
                       <div className={styles.metaText}>
                         <span className={styles.metaLabel}>{row.label}</span>
                         <span className={styles.metaValue}>{row.value}</span>
-                      </div>
-
-                      {isLast && (
-                        <ul className={styles.roomsList}>
-                          {active.rooms.map((room, j) =>
-                            room.trim().endsWith(':') ? (
-                              <li key={j} className={styles.roomHeading}>
-                                {room}
-                              </li>
-                            ) : (
-                              <li key={j} className={styles.roomItem}>
-                                {room}
-                              </li>
-                            )
-                          )}
-                        </ul>
-                      )}
+                      </div>                   
                     </div>
                   );
                 })}
