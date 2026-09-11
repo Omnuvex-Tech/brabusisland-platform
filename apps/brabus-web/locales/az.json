@@ -63,147 +63,77 @@
     "terms": "İstifadəçi razılaşması",
     "copyright": "© 2026. Bütün hüquqlar qorunur."
   },
-  "plans": {
-    "title": "Mənzil planları",
-    "button": "Mənzillərə bax",
-    "units": [
-      {
-        "id": "studio-a3",
-        "tabLabel": "STUDİO",
-        "imageAlt": "STUDİO Tip A3 mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "C Blok, 3-cü mərtəbədən 13-cü mərtəbəyə qədər."
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "430.55 kv.fut | 40.00 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "Ölçüsü dəyişir"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "520.43 kv.fut | 48.35 kv.m"
-          }
-        ]
-      },
-      {
-        "id": "1-yataq-a1",
-        "tabLabel": "1 YATAQ OTAQLI",
-        "imageAlt": "1 Yataq otaqlı Tip A1 mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "A və B Blok, 3-cü mərtəbədən 13-cü mərtəbəyə qədər"
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "806.00 kv.fut | 74.88 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "Ölçüsü dəyişir"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "979.94 kv.fut | 91.04 kv.m"
-          }
-        ]
-      },
-      {
-        "id": "2-yataq-a",
-        "tabLabel": "2 YATAQ OTAQLI",
-        "imageAlt": "2 Yataq otaqlı Tip A mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "B Blok, 5-ci mərtəbədən 13-cü mərtəbəyə qədər"
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "1328.37 kv.fut | 123.41 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "230.24 kv.fut | 21.39 kv.m"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "1558.61 kv.fut | 144.80 kv.m"
-          }
-        ]
-      },
-      {
-        "id": "3-yataq-a",
-        "tabLabel": "3 YATAQ OTAQLI",
-        "imageAlt": "3 Yataq otaqlı Tip A mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "A Blok, 3-cü mərtəbədən 11-ci mərtəbəyə qədər"
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "2458.26 kv.fut | 228.38 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "855.30 kv.fut | 79.46 kv.m"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "3313.56 kv.fut | 307.84 kv.m"
-          }
-        ]
-      },
-      {
-        "id": "dupleks-a5",
-        "tabLabel": "Dupleks",
-        "imageAlt": "Dupleks Tip A5 mənzil planı",
-        "meta": [
-          {
-            "label": "Blok və mərtəbə",
-            "value": "1-ci və 2-ci mərtəbələrdə mövcuddur"
-          },
-          {
-            "label": "Daxili Sahə",
-            "value": "1486.60 kv.fut | 138.11 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "826.88 kv.fut | 76.82 kv.m"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "2313.48 kv.fut | 214.93 kv.m"
-          }
-        ]
-      },
-    
-      {
-        "id": "villa",
-        "tabLabel": "VİLLA",
-        "imageAlt": "Villa mənzil planı",
-        "meta": [
-          {
-            "label": "Daxili Sahə",
-            "value": "3521.30 kv.fut | 327.14 kv.m"
-          },
-          {
-            "label": "Xarici Sahə",
-            "value": "1241.40 kv.fut | 115.33 kv.m"
-          },
-          {
-            "label": "Ümumi Sahə:",
-            "value": "4762.70 kv.fut | 442.47 kv.m"
-          }
-        ]
-      }
-    ]
-  },
+"plans": {
+  "title": "Mənzil planları",
+  "button": "Mənzillərə bax",
+  "units": [
+    {
+      "id": "studio-a3",
+      "tabLabel": "STUDİO",
+      "imageAlt": "STUDİO Tip A3 mənzil planı",
+      "meta": [
+        { "label": "Blok və mərtəbə", "value": "C Blok, 3-cü mərtəbədən 13-cü mərtəbəyə qədər." },
+        { "label": "Daxili Sahə", "value": "430.55 kv.fut | 40.00 kv.m" },
+        { "label": "Xarici Sahə", "value": "Ölçüsü dəyişir" },
+        { "label": "Ümumi Sahə:", "min": "41.58 kv.m", "max": "62.49 kv.m" }
+      ]
+    },
+    {
+      "id": "1-yataq-a1",
+      "tabLabel": "1 YATAQ OTAQLI",
+      "imageAlt": "1 Yataq otaqlı Tip A1 mənzil planı",
+      "meta": [
+        { "label": "Blok və mərtəbə", "value": "A və B Blok, 3-cü mərtəbədən 13-cü mərtəbəyə qədər" },
+        { "label": "Daxili Sahə", "value": "806.00 kv.fut | 74.88 kv.m" },
+        { "label": "Xarici Sahə", "value": "Ölçüsü dəyişir" },
+        { "label": "Ümumi Sahə:", "min": "68.9 kv.m", "max": "162.74 kv.m" }
+      ]
+    },
+    {
+      "id": "2-yataq-a",
+      "tabLabel": "2 YATAQ OTAQLI",
+      "imageAlt": "2 Yataq otaqlı Tip A mənzil planı",
+      "meta": [
+        { "label": "Blok və mərtəbə", "value": "B Blok, 5-ci mərtəbədən 13-cü mərtəbəyə qədər" },
+        { "label": "Daxili Sahə", "value": "1328.37 kv.fut | 123.41 kv.m" },
+        { "label": "Xarici Sahə", "value": "230.24 kv.fut | 21.39 kv.m" },
+        { "label": "Ümumi Sahə:", "min": "116.48 kv.m", "max": "196.85 kv.m" }
+      ]
+    },
+    {
+      "id": "3-yataq-a",
+      "tabLabel": "3 YATAQ OTAQLI",
+      "imageAlt": "3 Yataq otaqlı Tip A mənzil planı",
+      "meta": [
+        { "label": "Blok və mərtəbə", "value": "A Blok, 3-cü mərtəbədən 11-ci mərtəbəyə qədər" },
+        { "label": "Daxili Sahə", "value": "2458.26 kv.fut | 228.38 kv.m" },
+        { "label": "Xarici Sahə", "value": "855.30 kv.fut | 79.46 kv.m" },
+        { "label": "Ümumi Sahə:", "min": "174.97 kv.m", "max": "316.87 kv.m" }
+      ]
+    },
+    {
+      "id": "dupleks-a5",
+      "tabLabel": "Dupleks",
+      "imageAlt": "Dupleks Tip A5 mənzil planı",
+      "meta": [
+        { "label": "Blok və mərtəbə", "value": "1-ci və 2-ci mərtəbələrdə mövcuddur" },
+        { "label": "Daxili Sahə", "value": "1486.60 kv.fut | 138.11 kv.m" },
+        { "label": "Xarici Sahə", "value": "826.88 kv.fut | 76.82 kv.m" },
+        { "label": "Ümumi Sahə:", "min": "167.46 kv.m", "max": "296.32 kv.m" }
+      ]
+    },
+    {
+      "id": "villa",
+      "tabLabel": "VİLLA",
+      "imageAlt": "Villa mənzil planı",
+      "meta": [
+        { "label": "Daxili Sahə", "value": "3521.30 kv.fut | 327.14 kv.m" },
+        { "label": "Xarici Sahə", "value": "1241.40 kv.fut | 115.33 kv.m" },
+        { "label": "Ümumi Sahə:", "min": "493.65 kv.m", "max": "493.65 kv.m" }
+      ]
+    }
+  ]
+},
   "contact": {
     "heading": "Əlaqə",
     "email": "info@treva.realestate",

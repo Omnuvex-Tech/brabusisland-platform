@@ -26,7 +26,6 @@ const ICONS: Record<string, number[]> = {
 
 export function Plans({ locale }: { locale: string }) {
   const t = getDictionary(locale);
-
   const units = t.plans.units.map((unit) => ({
     ...unit,
     imageSrc: IMAGES[unit.id] ?? '',

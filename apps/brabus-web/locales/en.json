@@ -63,147 +63,77 @@
   "terms": "Terms of Use",
   "copyright": "© 2026. All rights reserved."
 },
-  "plans": {
-    "title": "Floor plans",
-    "button": "View units",
-    "units": [
-      {
-        "id": "studio-a3",
-        "tabLabel": "STUDIO Type A3",
-        "imageAlt": "STUDIO Type A3 floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Block C, floors 3 to 13."
-          },
-          {
-            "label": "Internal area",
-            "value": "430.55 sq.ft | 40.00 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "Size varies"
-          },
-          {
-            "label": "Total area:",
-            "value": "520.43 sq.ft | 48.35 sq.m"
-          }
-        ]
-      },
-      {
-        "id": "1-yataq-a1",
-        "tabLabel": "1 BEDROOM",
-        "imageAlt": "1 Bedroom Type A1 floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Blocks A & B, floors 3 to 13"
-          },
-          {
-            "label": "Internal area",
-            "value": "806.00 sq.ft | 74.88 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "Size varies"
-          },
-          {
-            "label": "Total area:",
-            "value": "979.94 sq.ft | 91.04 sq.m"
-          }
-        ]
-      },
-      {
-        "id": "2-yataq-a",
-        "tabLabel": "2 BEDROOM",
-        "imageAlt": "2 Bedroom Type A floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Block B, floors 5 to 13"
-          },
-          {
-            "label": "Internal area",
-            "value": "1328.37 sq.ft | 123.41 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "230.24 sq.ft | 21.39 sq.m"
-          },
-          {
-            "label": "Total area:",
-            "value": "1558.61 sq.ft | 144.80 sq.m"
-          }
-        ]
-      },
-      {
-        "id": "3-yataq-a",
-        "tabLabel": "3 BEDROOM",
-        "imageAlt": "3 Bedroom Type A floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Block A, floors 3 to 11"
-          },
-          {
-            "label": "Internal area",
-            "value": "2458.26 sq.ft | 228.38 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "855.30 sq.ft | 79.46 sq.m"
-          },
-          {
-            "label": "Total area:",
-            "value": "3313.56 sq.ft | 307.84 sq.m"
-          }
-        ]
-      },
-      {
-        "id": "dupleks-a5",
-        "tabLabel": "Duplex",
-        "imageAlt": "Duplex Type A5 floor plan",
-        "meta": [
-          {
-            "label": "Block & floor",
-            "value": "Available on floors 1 & 2"
-          },
-          {
-            "label": "Internal area",
-            "value": "1486.60 sq.ft | 138.11 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "826.88 sq.ft | 76.82 sq.m"
-          },
-          {
-            "label": "Total area:",
-            "value": "2313.48 sq.ft | 214.93 sq.m"
-          }
-        ]
-      },
-   
-      {
-        "id": "villa",
-        "tabLabel": "VILLA",
-        "imageAlt": "Villa floor plan",
-        "meta": [
-          {
-            "label": "Internal area",
-            "value": "3521.30 sq.ft | 327.14 sq.m"
-          },
-          {
-            "label": "External area",
-            "value": "1241.40 sq.ft | 115.33 sq.m"
-          },
-          {
-            "label": "Total area:",
-            "value": "4762.70 sq.ft | 442.47 sq.m"
-          }
-        ]
-      }
-    ]
-  },
+ "plans": {
+  "title": "Floor plans",
+  "button": "View units",
+  "units": [
+    {
+      "id": "studio-a3",
+      "tabLabel": "STUDIO Type A3",
+      "imageAlt": "STUDIO Type A3 floor plan",
+      "meta": [
+        { "label": "Block & floor", "value": "Block C, floors 3 to 13." },
+        { "label": "Internal area", "value": "430.55 sq.ft | 40.00 sq.m" },
+        { "label": "External area", "value": "Size varies" },
+        { "label": "Total area:", "min": "41.58 sq.m", "max": "62.49 sq.m" }
+      ]
+    },
+    {
+      "id": "1-yataq-a1",
+      "tabLabel": "1 BEDROOM",
+      "imageAlt": "1 Bedroom Type A1 floor plan",
+      "meta": [
+        { "label": "Block & floor", "value": "Blocks A & B, floors 3 to 13" },
+        { "label": "Internal area", "value": "806.00 sq.ft | 74.88 sq.m" },
+        { "label": "External area", "value": "Size varies" },
+        { "label": "Total area:", "min": "68.9 sq.m", "max": "162.74 sq.m" }
+      ]
+    },
+    {
+      "id": "2-yataq-a",
+      "tabLabel": "2 BEDROOM",
+      "imageAlt": "2 Bedroom Type A floor plan",
+      "meta": [
+        { "label": "Block & floor", "value": "Block B, floors 5 to 13" },
+        { "label": "Internal area", "value": "1328.37 sq.ft | 123.41 sq.m" },
+        { "label": "External area", "value": "230.24 sq.ft | 21.39 sq.m" },
+        { "label": "Total area:", "min": "116.48 sq.m", "max": "196.85 sq.m" }
+      ]
+    },
+    {
+      "id": "3-yataq-a",
+      "tabLabel": "3 BEDROOM",
+      "imageAlt": "3 Bedroom Type A floor plan",
+      "meta": [
+        { "label": "Block & floor", "value": "Block A, floors 3 to 11" },
+        { "label": "Internal area", "value": "2458.26 sq.ft | 228.38 sq.m" },
+        { "label": "External area", "value": "855.30 sq.ft | 79.46 sq.m" },
+        { "label": "Total area:", "min": "174.97 sq.m", "max": "316.87 sq.m" }
+      ]
+    },
+    {
+      "id": "dupleks-a5",
+      "tabLabel": "Duplex",
+      "imageAlt": "Duplex Type A5 floor plan",
+      "meta": [
+        { "label": "Block & floor", "value": "Available on floors 1 & 2" },
+        { "label": "Internal area", "value": "1486.60 sq.ft | 138.11 sq.m" },
+        { "label": "External area", "value": "826.88 sq.ft | 76.82 sq.m" },
+        { "label": "Total area:", "min": "167.46 sq.m", "max": "296.32 sq.m" }
+      ]
+    },
+    {
+      "id": "villa",
+      "tabLabel": "VILLA",
+      "imageAlt": "Villa floor plan",
+      "meta": [
+        { "label": "Internal area", "value": "3521.30 sq.ft | 327.14 sq.m" },
+        { "label": "External area", "value": "1241.40 sq.ft | 115.33 sq.m" },
+        { "label": "Total area:", "min": "493.65 sq.m", "max": "493.65 sq.m" }
+      ]
+    }
+  ]
+},
    "contact": {
     "heading": "Contacts",
     "email": "info@treva.realestate",
