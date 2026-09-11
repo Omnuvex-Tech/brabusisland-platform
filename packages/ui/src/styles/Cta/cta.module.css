@@ -23,7 +23,7 @@
   align-items: center;
   justify-content: center;
   white-space: nowrap;
-  padding:clamp(14px, 1.6vw, 15px) clamp(24px, 3vw, 46px);
+  padding: clamp(14px, 1.6vw, 15px) clamp(24px, 3vw, 46px);
   background: #e40623;
   color: #ffffff;
   font-family: 'DIN Pro', sans-serif;
@@ -36,18 +36,20 @@
 }
 
 .button:hover {
-background: #000000;
+  background: #000000;
 
 }
 
 @media (max-width: 768px) {
   .section {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 2;
   }
 
   .button {
     white-space: normal;
     text-align: center;
-    max-width: 80%;
+    width: 62%;
+    height: 50px;
+    font-size: 12px;
   }
 }

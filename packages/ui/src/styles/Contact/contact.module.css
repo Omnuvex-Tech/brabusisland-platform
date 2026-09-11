@@ -269,8 +269,13 @@
     box-sizing: content-box;
 }
 
+/* .mapImage {
+    object-fit: cover;
+} */
+
 .mapImage {
     object-fit: cover;
+    object-position: 68% center;
 }
 
 .mapButton {
@@ -321,10 +326,11 @@
 }
 
 .statusSuccess {
-    color: #4caf50; 
+    color: #4caf50;
 }
+
 .statusError {
-    color: #e40623;  
+    color: #e40623;
 }
 
 
@@ -407,12 +413,16 @@
         width: 82%;
     }
 
+    .mapImage {
+        object-position: 72% center;
+    }
+
     .mapButton {
-        left: 50%;
-        transform: translate(-50%, -50%);
+        height: 36px;
         padding: 0 18px;
-        height: 42px;
-        font-size: 14px;
+        font-size: 12px;
+        left: 24%;
+        transform: translate(-50%, -50%);
     }
 
     .countryPanel {

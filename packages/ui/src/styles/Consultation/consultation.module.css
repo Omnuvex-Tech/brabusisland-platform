@@ -42,12 +42,14 @@ background: #000000;
 
 @media (max-width: 768px) {
   .section {
-    aspect-ratio: 4 / 5;
+    aspect-ratio: 4 / 2;
   }
 
   .button {
     white-space: normal;
     text-align: center;
-    max-width: 80%;
+    width: 62%;
+    height: 50px;
+    font-size: 12px;
   }
 }
