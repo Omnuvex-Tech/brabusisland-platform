@@ -39,7 +39,6 @@ const LanguageSwitcher = ({
     setIsOpen(false);
   };
 
-  // ---- MOBILE MENU: hər dil öz düyməsi, hamısı görünür, dropdown yoxdur ----
   if (variant === 'inline') {
     return (
       <div className={styles.inlineRow}>
@@ -67,7 +66,6 @@ const LanguageSwitcher = ({
     );
   }
 
-  // ---- DESKTOP: dropdown ----
   return (
     <div className={styles.wrapper} ref={rootRef}>
       <button
