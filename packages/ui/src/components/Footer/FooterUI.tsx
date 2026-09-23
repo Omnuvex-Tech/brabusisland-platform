@@ -26,6 +26,9 @@ interface FooterUIProps {
   termsLabel: string;
   termsHref: string;
   copyrightText: string;
+  poweredByLabel?: string;
+  poweredByHref?: string;
+  poweredByLogoSrc?: string;
 }
 
 const fadeInUp: Variants = {
@@ -70,6 +73,9 @@ export function FooterUI({
   termsLabel,
   termsHref,
   copyrightText,
+  poweredByLabel = 'Powered by',
+  poweredByHref = 'https://omnuvex.net',
+  poweredByLogoSrc = '/images/omnuvexx.png',
 }: FooterUIProps) {
   return (
     <footer className={styles.footer} style={{ overflow: 'hidden' }}>
@@ -163,7 +169,27 @@ export function FooterUI({
             {termsLabel}
           </Link>
         </div>
-        <span className={styles.copyright}>{copyrightText}</span>
+
+        <div className={styles.rightGroup}>
+          <a
+            href={poweredByHref}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={styles.powered}
+          >
+            <span className={styles.poweredText}>{poweredByLabel}</span>
+            <span className={styles.poweredBadge}>
+              <Image
+                src={poweredByLogoSrc}
+                alt="Omnuvex"
+                width={40}
+                height={40}
+                className={styles.poweredLogo}
+              />
+            </span>
+          </a>
+          <span className={styles.copyright}>{copyrightText}</span>
+        </div>
       </motion.div>
     </footer>
   );
