@@ -1,3 +1,4 @@
+
 .navbar {
   position: sticky;
   top: 0;
@@ -5,43 +6,134 @@
   right: 0;
   z-index: 100;
   width: 100%;
+  display: flex;
+  align-items: stretch;
   background-color: #ffffff;
 }
 
+
+.collabSection {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: stretch;
+  flex-shrink: 0;
+}
+.collabBlock {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #111111;
+  padding: 10px 13px 10px 4px;
+  clip-path: polygon(0 0, 100% 0, calc(100% - 22px) 100%, 0 100%);
+}
+
+.collabLine {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background: #e40623;
+  z-index: 1;
+}
+
+.collabLine:nth-child(1) {
+  left: 6px;
+}
+
+.collabLine:nth-child(2) {
+  left: 12px;
+}
+
+.collabText {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 2px 8px 2px 6px;
+  background: #111111;
+}
+
+.collabLabel {
+  font-family: 'DIN Pro', sans-serif;
+  font-size: 8px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  white-space: nowrap;
+  line-height: 1;
+}
+.collabLogoWrap {
+  position: relative;
+  width: 100px;
+  height: 17px;
+}
+
+.collabLogo {
+  object-fit: contain;
+  object-position: left center;
+}
+
+.sigWrap {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+}
+
+.sigLogo {
+  width: auto;
+  height: 79px;
+}
+
+/* ---- Inner bar ---- */
+
+.navbar {
+  position: sticky;
+}
 .inner {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  margin: 0 auto;
-  padding: 18px 98px 15px;
+  flex: 1;
+  min-width: 0;
+  margin: 0;
+  padding: 14px 28px 12px 0;
 }
 
+/* Logo: bütün .navbar-a görə tam mərkəz (position:relative .inner-dən çıxarıldı) */
 .logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   display: flex;
   align-items: center;
-  flex-shrink: 0;
+  z-index: 1;
   text-decoration: none;
 }
 
 .logoImage {
-  width: 140px;
-  height: 40px;
+  width: 142px;
+  height: 50px;
   object-fit: contain;
+}
+
+.nav {
+  margin-left: auto;
 }
 
 .navList {
   display: flex;
   align-items: center;
-  gap: 36px;
+  gap: 22px;
   list-style: none;
-  margin: 0 40px 0 96px;
+  margin: 0;
   padding: 0;
 }
 
 .navLink {
   font-family: 'DIN Pro', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 120%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -57,7 +149,8 @@
 .actions {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
+  margin-left: 22px;
 }
 
 .catalogButton {
@@ -65,14 +158,14 @@
   align-items: center;
   justify-content: center;
   width: fit-content;
-  height: 35px;
-  padding: 0 15px;
+  height: 30px;
+  padding: 17px 16px;
   gap: 10px;
   background: #111111;
   color: #ffffff;
   font-family: 'DIN Pro', sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 13px;
   line-height: 120%;
   letter-spacing: -0.02em;
   text-transform: uppercase;
@@ -100,6 +193,8 @@
   background: #ffffff;
   cursor: pointer;
   flex-shrink: 0;
+  margin-left: auto;
+  z-index: 2;
 }
 
 .burger:hover {
@@ -141,6 +236,11 @@
   padding: 14px 20px;
   border-bottom: 1px solid #eeeeee;
   flex-shrink: 0;
+}
+
+.mobileHeader .logo {
+  position: static;
+  transform: none;
 }
 
 .closeBtn {
@@ -225,19 +325,41 @@
   border-top: 1px solid #eeeeee;
 }
 
-@media (max-width: 1024px) {
-  .inner {
-    padding: 12px clamp(16px, 5vw, 40px);
+@media (max-width: 1200px) {
+  .navList {
+    gap: 18px;
   }
 
-  .navList {
-    margin-left: 32px;
-    gap: 20px;
+  .navLink {
+    font-size: 13px;
+  }
+
+  .logoImage {
+    width: 100px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .inner {
+    padding: 12px clamp(16px, 4vw, 32px) 12px 0;
   }
 
   .catalogButton {
     padding: 0 12px;
-    font-size: 14px;
+    font-size: 13px;
+  }
+
+  .collabBlock {
+    padding: 0 20px 0 10px;
+  }
+
+  .sigWrap {
+    padding: 0 12px;
+  }
+
+  .sigLogo {
+    height: 18px;
   }
 }
 
@@ -250,16 +372,30 @@
   .burger {
     display: flex;
   }
+
+  .collabLabel {
+    display: none;
+  }
+
+  .collabLogo {
+    height: 13px;
+  }
+
+  .logo {
+    position: static;
+    transform: none;
+    margin-right: auto;
+  }
+
+  .inner {
+    padding: 12px 16px;
+  }
 }
 
 @media (max-width: 480px) {
-  .inner {
-    padding: 10px 16px;
-  }
-
   .logoImage {
-    width: 110px;
-    height: 32px;
+    width: 100px;
+    height: 28px;
   }
 
   .burger,
@@ -278,5 +414,17 @@
 
   .mobileLangRow {
     padding: 16px;
+  }
+
+  .collabBlock {
+    padding: 0 14px 0 8px;
+  }
+
+  .sigWrap {
+    padding: 0 10px;
+  }
+
+  .sigLogo {
+    height: 16px;
   }
 }

@@ -1,3 +1,4 @@
+
 'use client';
 
 import { useEffect, useState, type ReactNode } from 'react';
@@ -39,6 +40,34 @@ export function NavbarUI({
 
   return (
     <header className={styles.navbar}>
+      <div className={styles.collabSection}>
+        
+     <div className={styles.collabBlock}>
+  <span className={styles.collabLine} />
+  <span className={styles.collabLine} />
+ <div className={styles.collabText}>
+  <span className={styles.collabLabel}>collaboration</span>
+  <div className={styles.collabLogoWrap}>
+    <Image
+      src="/images/whitelogo.png"
+      alt="BRABUS"
+      fill
+      className={styles.collabLogo}
+    />
+  </div>
+</div>
+</div>
+        <div className={styles.sigWrap}>
+          <Image
+            src="/images/siglogo.png"
+            alt="SIG"
+            width={70}
+            height={26}
+            className={styles.sigLogo}
+          />
+        </div>
+      </div>
+
       <div className={styles.inner}>
         <Link href="/" className={styles.logo} onClick={closeMenu}>
           <Image

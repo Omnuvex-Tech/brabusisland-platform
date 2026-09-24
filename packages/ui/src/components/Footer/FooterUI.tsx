@@ -29,6 +29,11 @@ interface FooterUIProps {
   poweredByLabel?: string;
   poweredByHref?: string;
   poweredByLogoSrc?: string;
+  sigLogoSrc?: string;
+  sigLogoAlt?: string;
+  sigDescription: string;
+  collabLabel: string;
+  collabDescription: string;
 }
 
 const fadeInUp: Variants = {
@@ -76,6 +81,11 @@ export function FooterUI({
   poweredByLabel = 'Powered by',
   poweredByHref = 'https://omnuvex.net',
   poweredByLogoSrc = '/images/omnuvexx.png',
+  sigLogoSrc = '/images/siglogo.png',
+  sigLogoAlt = 'SIG',
+  sigDescription,
+  collabLabel,
+  collabDescription,
 }: FooterUIProps) {
   return (
     <footer className={styles.footer} style={{ overflow: 'hidden' }}>
@@ -105,51 +115,88 @@ export function FooterUI({
           variants={fadeInUp}
           transition={{ delay: 0.1 }}
         />
+
         <div className={styles.navRow}>
-          <motion.ul
-            className={styles.navList}
+          <motion.div
+            className={styles.infoGroup}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.2 }}
             variants={navContainerVariants}
           >
-            {navLinks.map((link) => (
-              <motion.li key={link.href} variants={navItemVariants}>
-                {link.target === '_blank' ? (
-                  <a
-                    href={link.href}
-                    className={styles.navLink}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    {link.label}
-                  </a>
-                ) : (
-                  <Link href={link.href} className={styles.navLink}>
-                    {link.label}
-                  </Link>
-                )}
-              </motion.li>
-            ))}
-          </motion.ul>
-
-          <motion.div
-            className={styles.rightControls}
-            initial="hidden"
-            whileInView="visible"
-            viewport={{ once: true, amount: 0.2 }}
-            variants={fadeInUp}
-            transition={{ delay: 0.2 }}
-          >
-            <a href={catalogHref} className={styles.catalogButton} download rel="noopener noreferrer">
-              {catalogLabel}
-            </a>
-            <LanguageSwitcher
-              locales={locales}
-              activeLocale={activeLocale}
-              onLocaleChange={onLocaleChange}
-            />
+      <motion.div className={styles.infoBlock} variants={navItemVariants}>
+  <div className={styles.sigLogoWrap}>
+    <Image
+      src={sigLogoSrc}
+      alt={sigLogoAlt}
+      width={90}
+      height={34}
+      className={styles.sigLogo}
+    />
+  </div>
+  <p className={styles.infoText}>{sigDescription}</p>
+</motion.div>
+            <motion.div className={styles.infoBlock} variants={navItemVariants}>
+              <div className={styles.collabHeader}>
+                <span className={styles.collabLabel}>{collabLabel}</span>
+                <Image
+                  src={logoSrc}
+                  alt={logoAlt}
+                  width={90}
+                  height={26}
+                  className={styles.collabLogo}
+                />
+              </div>
+              <p className={styles.infoText}>{collabDescription}</p>
+            </motion.div>
           </motion.div>
+
+          <div className={styles.navGroup}>
+            <motion.ul
+              className={styles.navList}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={navContainerVariants}
+            >
+              {navLinks.map((link) => (
+                <motion.li key={link.href} variants={navItemVariants}>
+                  {link.target === '_blank' ? (
+                    <a
+                      href={link.href}
+                      className={styles.navLink}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link href={link.href} className={styles.navLink}>
+                      {link.label}
+                    </Link>
+                  )}
+                </motion.li>
+              ))}
+            </motion.ul>
+
+            <motion.div
+              className={styles.rightControls}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+              variants={fadeInUp}
+              transition={{ delay: 0.2 }}
+            >
+              <a href={catalogHref} className={styles.catalogButton} download rel="noopener noreferrer">
+                {catalogLabel}
+              </a>
+              <LanguageSwitcher
+                locales={locales}
+                activeLocale={activeLocale}
+                onLocaleChange={onLocaleChange}
+              />
+            </motion.div>
+          </div>
         </div>
       </div>
 

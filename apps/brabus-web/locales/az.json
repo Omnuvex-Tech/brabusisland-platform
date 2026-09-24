@@ -58,11 +58,16 @@
   "consultation": {
     "buttonText": "Konsultasiya üçün müraciət et"
   },
-  "footer": {
-    "privacy": "Məxfilik siyasəti",
-    "terms": "İstifadəçi razılaşması",
-    "copyright": "© 2026. Bütün hüquqlar qorunur."
-  },
+
+"footer": {
+  "sigDescription": "Regionda dəyər yaradan innovativ layihələrin müəllifi, memarlıqda fərqli baxış bucağı və dayanıqlı inkişaf fəlsəfəsi ilə gələcəyin yaşayış mühitini formalaşdıran aparıcı investisiya holdinqi.",
+  "collabLabel": "collaboration",
+  "collabDescription": "Cəsarətli Alman mühəndisliyinin qlobal simvoluna çevrilən şirkət, \"One-Second-Wow\" fəlsəfəsini, yüksək performans DNT-sini və alman dəqiqliyini ilk dəfə süni ada konseptində Xəzər sahilinə gətirir.",
+  "privacy": "Məxfilik siyasəti",
+  "terms": "İstifadəçi razılaşması",
+  "copyright": "© 2026. Bütün hüquqlar qorunur."
+},
+
 "plans": {
   "title": "Mənzil planları",
   "button": "Mənzillərə bax",

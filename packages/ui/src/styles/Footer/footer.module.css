@@ -6,7 +6,7 @@
 
 .top {
     background: #f2f2f2;
-    padding: 46px clamp(24px, 6vw, 92px) 149px;
+    padding: 46px clamp(24px, 6vw, 92px) 96px;
 }
 
 .logoWrap {
@@ -30,17 +30,87 @@
 
 .navRow {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     gap: 24px;
     flex-wrap: wrap;
     padding: 4px 14px;
 }
 
+/* ---- Sol tərəf: SIG + collaboration BRABUS blokları ---- */
+.infoGroup {
+    display: flex;
+    align-items: flex-start;
+    gap: 46px;
+    flex-wrap: wrap;
+}
+
+.infoBlock {
+    display: flex;
+    flex-direction: column;
+    max-width: 230px;
+}
+
+.sigLogoWrap {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    margin-bottom: 12px;
+}
+
+.sigLogo {
+    width: auto;
+    height: 60px;
+    object-fit: contain;
+    margin-left: -16px;
+}
+
+.collabHeader {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+    margin-bottom: 12px;
+    height: 34px;
+    justify-content: flex-end;
+}
+
+.collabLabel {
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 120%;
+    letter-spacing: -0.02em;
+    color: #767676;
+}
+
+.collabLogo {
+    width: auto;
+    height: 22px;
+    object-fit: contain;
+}
+
+.infoText {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 150%;
+    letter-spacing: -0.01em;
+    color: #767676;
+    margin: 0;
+}
+
+/* ---- Sağ tərəf: nav linkləri + kataloq/dil (navbar ilə eyni miqyas) ---- */
+
+.navGroup {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+    flex-wrap: wrap;
+}
+
 .navList {
     display: flex;
     align-items: center;
-    gap: 46px;
+    gap: 22px;
     margin: 0;
     padding: 0;
     list-style: none;
@@ -48,7 +118,7 @@
 
 .navLink {
     font-weight: 400;
-    font-size: 17px;
+    font-size: 13px;
     line-height: 120%;
     letter-spacing: -0.02em;
     text-transform: uppercase;
@@ -64,19 +134,19 @@
 .rightControls {
     display: flex;
     align-items: center;
-    gap: 14px;
+    gap: 10px;
 }
 
 .catalogButton {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    height: 35px;
-    padding: 0 25px;
+    height: 30px;
+    padding: 0 16px;
     background: #111111;
     color: #ffffff;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 13px;
     letter-spacing: -0.02em;
     text-transform: uppercase;
     text-decoration: none;
@@ -165,10 +235,29 @@ background: #E40623;
     margin: -23px 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navRow {
         flex-direction: column;
         align-items: flex-start;
+        gap: 32px;
+    }
+
+    .navGroup {
+        width: 100%;
+        justify-content: space-between;
+    }
+}
+
+@media (max-width: 768px) {
+    .infoGroup {
+        flex-direction: column;
+        gap: 24px;
+    }
+
+    .navGroup {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
     }
 
     .navList {

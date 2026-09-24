@@ -58,11 +58,17 @@
   "consultation": {
     "buttonText": "Request a consultation"
   },
-  "footer": {
+
+"footer": {
+  "sigDescription": "A leading investment holding shaping the living environment of the future through innovative projects that create value in the region, a distinct perspective on architecture, and a philosophy of sustainable development.",
+  "collabLabel": "collaboration",
+  "collabDescription": "A global icon of bold German engineering, bringing its \"One-Second-Wow\" philosophy, high-performance DNA, and German precision to the Caspian coast for the first time in an artificial island concept.",
   "privacy": "Privacy Policy",
   "terms": "Terms of Use",
   "copyright": "© 2026. All rights reserved."
 },
+
+
  "plans": {
   "title": "Floor plans",
   "button": "View units",

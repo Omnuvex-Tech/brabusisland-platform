@@ -43,6 +43,9 @@ export function Footer({ locale }: { locale: string }) {
 privacyHref={localizedPath('/privacy-policy', locale as Locale)}
 termsHref={localizedPath('/terms', locale as Locale)}
       copyrightText={t.footer.copyright}
+        sigDescription={t.footer.sigDescription}
+    collabLabel={t.footer.collabLabel}
+    collabDescription={t.footer.collabDescription}
     />
   );
 }
